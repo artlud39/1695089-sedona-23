@@ -1,0 +1,18 @@
+.catalog-photo__wrapper {
+  width: $mobile-wrapper;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.catalog-photo__figure {
+  @include reset;
+}
+
+.catalog-photo__figure p {
+  @include reset;
+}
+
+.catalog-video__presentation {
+  text-align: center;
+}

@@ -1,0 +1,20 @@
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content min-content min-content min-content min-content min-content ;
+}
+.form__feildset {
+  @include reset;
+  border: none;
+}
+.form__legend {
+  @include reset;
+  text-align: center;
+}
+.form__legend--uppercase {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+

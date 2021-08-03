@@ -1,0 +1,15 @@
+.search__wrapper {
+  width: $mobile-wrapper;
+  margin: 0 auto;
+  text-align: center;
+}
+.search__link {
+  font-size: 21px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+  background-color: $lightblue;
+  color: $white;
+  text-decoration: none;
+  padding: 15px 32px;
+}

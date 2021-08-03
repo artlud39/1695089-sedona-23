@@ -1,0 +1,10 @@
+.another-reasons {
+  background-color: #EEE;
+}
+.another-reasons__wrapper {
+  width: $mobile-wrapper;
+  margin: 0 auto;
+}
+.reason__text{
+  @include reset;
+}

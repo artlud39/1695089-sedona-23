@@ -1,0 +1,29 @@
+.page-footer__wrapper {
+  width: $mobile-wrapper;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.social__list {
+  @include reset-list;
+  display: flex;
+  justify-content: center;
+}
+.social__link {
+  margin-right: 6px;
+}
+
+.contacts__text {
+  font-size: 21px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+.copyright {
+  text-align: center;
+}
+.copyright__text {
+  font-weight: 400;
+  text-transform: uppercase;
+}
