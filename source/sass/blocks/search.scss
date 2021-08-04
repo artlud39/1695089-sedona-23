@@ -1,9 +1,12 @@
 .search__wrapper {
-  width: $mobile-wrapper;
+  width: 280px;
   margin: 0 auto;
   text-align: center;
+  padding: 33px 0 49px;
 }
 .search__link {
+  width: 100%;
+  box-sizing: border-box;
   font-size: 21px;
   font-weight: bold;
   text-transform: uppercase;
@@ -12,4 +15,11 @@
   color: $white;
   text-decoration: none;
   padding: 15px 32px;
+}
+.search__title {
+  font-weight: bold;
+  font-size: 21px;
+}
+.search__text {
+  line-height: 24px;
 }

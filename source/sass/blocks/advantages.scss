@@ -1,8 +1,11 @@
-
+.advantages {
+  text-align: center;
+}
   .advantages__wrapper {
     width: $mobile-wrapper;
     margin: 0 auto;
-    text-align: center;
+    padding: 32px 18px 32px;
+    box-sizing: border-box;
   }
 
     @media (min-width:$tablet-width) {
@@ -17,6 +20,20 @@
       }
      }
 
+
+.advantages__slogan {
+ @include reset;
+ padding-bottom: 44px
+
+}
+.advantages__intro {
+  @include reset;
+}
+
+.advantages__slogan--mod-text {
+  font-weight: bold;
+  font-size: 18px;
+}
 
 
 

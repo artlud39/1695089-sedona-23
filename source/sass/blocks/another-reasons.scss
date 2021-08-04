@@ -2,9 +2,26 @@
   background-color: #EEE;
 }
 .another-reasons__wrapper {
-  width: $mobile-wrapper;
+  width: 280px;
   margin: 0 auto;
+  & :last-child {
+    border-bottom: none;
+  }
+  display: flex;
+  flex-wrap: wrap;
 }
-.reason__text{
+.another-reasons__text{
   @include reset;
+  padding: 26px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.another-reasons__text--bold {
+  font-weight: bold;
+  font-size: 18px;
+}
+.another-reasons__reason{
+  border-bottom: 1px solid #D6D6D6;
+
 }
