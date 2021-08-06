@@ -5,34 +5,7 @@
   flex-wrap: wrap;
   justify-content: center;
 }
-.catalog-photo__figure {
-  @include reset;
-}
 
-.catalog-photo__figure p {
 
-}
 
-.catalog-video__presentation {
-  text-align: center;
-}
-.advantages__slogan {
-  font-weight: bold;
-  font-size: 18px;
-}
-.advantages__intro {
-  line-height: 24px;
-}
-.catalog-photo__figcaption-subtitle {
-  @include reset;
-  font-weight: bold;
-}
-.catalog-photo__aftor {
-  @include reset;
-  text-transform: capitalize;
-}
-.catalog-photo__like {
-  @include reset;
-  font-weight: bold;
-  padding-left: 37px;
-}
+

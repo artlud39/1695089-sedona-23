@@ -23,17 +23,16 @@
 
 .advantages__slogan {
  @include reset;
- padding-bottom: 44px
-
+ padding-bottom: 44px;
+ font-weight: bold;
+ font-size: 18px;
 }
+
 .advantages__intro {
   @include reset;
+  line-height: 24px;
 }
 
-.advantages__slogan--mod-text {
-  font-weight: bold;
-  font-size: 18px;
-}
 
 
 
