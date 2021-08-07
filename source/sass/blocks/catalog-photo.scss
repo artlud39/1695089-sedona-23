@@ -1,0 +1,16 @@
+.catalog-photo__figure {
+  @include reset;
+}
+.catalog-photo__figcaption-subtitle {
+  @include reset;
+  font-weight: bold;
+}
+.catalog-photo__aftor {
+  @include reset;
+  text-transform: capitalize;
+}
+.catalog-photo__like {
+  @include reset;
+  font-weight: bold;
+  padding-left: 37px;
+}

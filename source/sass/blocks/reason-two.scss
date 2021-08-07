@@ -1,0 +1,23 @@
+
+.reason-two__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  text-align: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.reason-two__text {
+  @include reset;
+  background-color: $lightblue;
+  color: $white;
+  padding: 55px 12px 39px;
+  box-sizing: border-box;
+}
+.reason-two__text--bold {
+  font-weight: bold;
+  font-size: 18px;
+}

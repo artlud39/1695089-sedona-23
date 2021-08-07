@@ -1,0 +1,12 @@
+
+.features__wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.features__list {
+  @include reset-list;
+}
+.features__item {
+  padding-left: 70px;
+}

@@ -4,9 +4,11 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body>
+<body class="page__body">
   <header class="page-header">
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -31,6 +33,7 @@
       <img src="img/text-index.svg" width="282" height="214" alt="Сине-белая надпись добро пожаловать в Седону">
     </a>
   </header>
+
   <main>
     <h1 class="visually-hidden">Достопримечательности города Седона</h1>
     <section class="advantages">
@@ -44,14 +47,16 @@
         </p>
       </div>
     </section>
+
     <section class="catalog-photo">
       <h2 class="visually-hidden">Фото</h2>
       <div class="catalog-photo__wrapper">
         <figure class="catalog-photo__figure">
           <p><img class="catalog-photo__image" src="img/catalog/photo-1-mobile.jpg" width="280" height="280"
               alt="Дорога в пустыне на фоне заката"></p>
-          <figcaption class="catalog-photo__figcaption"><span class="catalog-photo__figcaption-subtitle">Не родные
-              просторы</span>
+          <figcaption class="catalog-photo__figcaption">
+            <p class="catalog-photo__figcaption-subtitle">Не родные
+              просторы</p>
             <p class="catalog-photo__aftor">Автор фото: Борис</p>
             <p class="catalog-photo__like"> 1350 <span class="visually-hidden">Лайк</span></p>
           </figcaption>
@@ -59,8 +64,9 @@
         <figure class="catalog-photo__figure">
           <p><img class="catalog-photo__image" src="img/catalog/photo-2-mobile.jpg" width="280" height="280"
               alt="Не большой кактус на фоне красных скал"></p>
-          <figcaption class="catalog-photo__figcaption"><span class="catalog-photo__figcaption-subtitle">Местная
-              растительность</span>
+          <figcaption class="catalog-photo__figcaption">
+            <p class="catalog-photo__figcaption-subtitle">Местная
+              растительность</p>
             <p class="catalog-photo__aftor">Автор фото: Сергей</p>
             <p class="catalog-photo__like"> 143 <span class="visually-hidden">Лайк</span></p>
           </figcaption>
@@ -68,8 +74,9 @@
         <figure class="catalog-photo__figure">
           <p><img class="catalog-photo__image" src="img/catalog/photo-3-mobile.jpg" width="280" height="280"
               alt="Горная дорога в лесу"></p>
-          <figcaption class="catalog-photo__figcaption"><span class="catalog-photo__figcaption-subtitle">Дорога на
-              север</span>
+          <figcaption class="catalog-photo__figcaption">
+            <p class="catalog-photo__figcaption-subtitle">Дорога на
+              север</p>
             <p class="catalog-photo__aftor">Автор фото: Петр</p>
             <p class="catalog-photo__like"> 96 <span class="visually-hidden">Лайк</span></p>
           </figcaption>
@@ -77,8 +84,9 @@
         <figure class="catalog-photo__figure">
           <p><img class="catalog-photo__image" src="img/catalog/photo-4-desktop 1.jpg" width="280" height="280"
               alt="узкий естественный каменный мост из красного камня"></p>
-          <figcaption class="catalog-photo__figcaption"> <span class="catalog-photo__figcaption-subtitle"> Мост Дьявола
-            </span>
+          <figcaption class="catalog-photo__figcaption">
+            <p class="catalog-photo__figcaption-subtitle"> Мост Дьявола
+            </p>
             <p class="catalog-photo__aftor">Автор фото: Антон</p>
             <p class="catalog-photo__like"> 254 <span class="visually-hidden">Лайк</span></p>
           </figcaption>
@@ -86,17 +94,26 @@
       </div>
     </section>
     <section class="catalog-video">
+      <h2 class="visually-hidden">Видео</h2>
       <div class="catalog-video__wrapper">
+        <div class="catalog-video__presentation">
+          <h3 class="catalog-video__presentation-title"> Все еще сомневаетесь?</h3>
+          <p class="catalog-video__presentation-text">
+            Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
+          </p>
+        </div>
         <video class="catalog-video__video" src="#" width="320" height="201" controls
           poster="img/catalog/video-mobile.jpg">
         </video>
       </div>
     </section>
   </main>
+
+
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <div class="page-footer__contacts contacts">
-        <p><b>#visitSEDONA</b></p>
+        <p class="contacts__text"><b>#visitSEDONA</b></p>
       </div>
       <div class="page-footer__social social">
         <ul class="social__list">
