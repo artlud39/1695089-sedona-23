@@ -1,4 +1,5 @@
 
+
 .reason-two__wrapper {
   width: 320px;
   margin: 0 auto;
@@ -7,7 +8,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
 }
 
 .reason-two__text {
@@ -16,8 +16,47 @@
   color: $white;
   padding: 55px 12px 39px;
   box-sizing: border-box;
+  width: 320px;
 }
 .reason-two__text--bold {
   font-weight: bold;
   font-size: 18px;
+}
+.reason-two__image {
+  width: 520px;
+  height:260px;
+}
+
+
+
+@media (min-width:$tablet-width) {
+  .reason-two__wrapper {
+    width: 768px;
+    flex-wrap: nowrap;
+  }
+  .reason-two__text {
+    width: 256px;
+    padding: 43px 36px 40px;
+    order: 2;
+  }
+  .reason-two__image {
+    width: 512px;
+    height: 256px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .reason-two__wrapper {
+    width: 1200px;
+    flex-wrap: nowrap;
+  }
+  .reason-two__text {
+    width: 400px;
+    padding: 47px 53px 56px;
+  }
+  .reason-two__image {
+    width: 800px;
+    height: 256px;
+  }
 }

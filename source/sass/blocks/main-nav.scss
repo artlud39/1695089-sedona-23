@@ -1,0 +1,29 @@
+.main-nav__list {
+  @include reset-list();
+ }
+ .site-list__item-link {
+  color: $white;
+  text-decoration: none;
+}
+
+   @media (min-width:$tablet-width) {
+     .main-nav__wrapper {
+       width: 640px;
+       margin: 0 auto;
+     }
+     .main-nav__toggle {
+       display: none;
+     }
+     .main-nav__list {
+      display: flex;
+      justify-content: space-between;
+    }
+   }
+
+   @media (min-width: $desktop-width) {
+     .main-nav__wrapper {
+       width: 960px;
+     }
+   }
+
+

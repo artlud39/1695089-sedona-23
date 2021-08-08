@@ -6,3 +6,17 @@
   grid-template-rows: 1fr 1fr 1fr;
 }
 
+@media (min-width:$tablet-width) {
+  .page-footer__wrapper {
+    width: $tablet-width;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  }
+
+@media (min-width: $desktop-width) {
+  .page-footer__wrapper {
+    width:  $desktop-width;
+  }
+  }
