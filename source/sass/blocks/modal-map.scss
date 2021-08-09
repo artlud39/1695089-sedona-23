@@ -1,27 +1,23 @@
 .modal-map__wrapper {
-  width: 320px;
+  max-width: $mobile-wrapper;
   margin: 0 auto;
+  text-align: center;
 }
 .modal-map__image {
   width: 320px;
   height: 350px;
+  width: 100%;
 }
 
 
 @media (min-width:$tablet-width) {
   .modal-map__wrapper {
-    width: $tablet-width;
-  }
-  .modal-map__image {
-    width: $tablet-width;
+    max-width: $tablet-wrapper;
   }
   }
 
 @media (min-width: $desktop-width) {
   .modal-map__wrapper {
-    width: $desktop-width;
-  }
-  .modal-map__image {
-    width: $desktop-width;
+    max-width: $desktop-wrapper;
   }
   }

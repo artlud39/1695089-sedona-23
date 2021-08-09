@@ -1,10 +1,9 @@
 
 
 .reason-two__wrapper {
-  width: 320px;
+  max-width: $mobile-wrapper;
   margin: 0 auto;
   text-align: center;
-  box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -16,7 +15,7 @@
   color: $white;
   padding: 55px 12px 39px;
   box-sizing: border-box;
-  width: 320px;
+
 }
 .reason-two__text--bold {
   font-weight: bold;
@@ -31,16 +30,16 @@
 
 @media (min-width:$tablet-width) {
   .reason-two__wrapper {
-    width: 768px;
+    max-width: $tablet-wrapper;
     flex-wrap: nowrap;
   }
   .reason-two__text {
-    width: 256px;
+    width: 33%;
     padding: 43px 36px 40px;
     order: 2;
   }
   .reason-two__image {
-    width: 512px;
+    width: 67%;
     height: 256px;
   }
 }
@@ -48,15 +47,15 @@
 
 @media (min-width: $desktop-width) {
   .reason-two__wrapper {
-    width: 1200px;
+    max-width: $desktop-wrapper;
     flex-wrap: nowrap;
   }
   .reason-two__text {
-    width: 400px;
+    width: 33%;
     padding: 47px 53px 56px;
   }
   .reason-two__image {
-    width: 800px;
+    width: 67%;
     height: 256px;
   }
 }

@@ -1,6 +1,6 @@
 
 .features__wrapper {
-  width: 280px;
+  max-width: $mobile-wrapper ;
   margin: 0 auto;
   text-align: center;
 }
@@ -10,25 +10,20 @@
 }
 .features__item {
   padding-left: 70px;
+
 }
-
-
-
-
-
 
 
 @media (min-width:$tablet-width) {
   .features__wrapper {
-    width: 640px;
-    padding: 60px 0;
+    max-width: $tablet-wrapper;
+    padding: 60px 40px;
   }
   .features__list {
     display: flex;
   }
   .features__item {
-    padding-left: 0px;
-    padding-top: 98px;
+    padding: 98px 20px 0;
   }
   .features__item--gift {
     order: 3;
@@ -37,9 +32,12 @@
 
 @media (min-width: $desktop-width) {
   .features__wrapper {
-    width: 980px;
+    max-width: $desktop-wrapper;
   }
   .features__text {
     padding: 0 20px;
+  }
+  .features__item {
+    padding: 98px 30px 0;
   }
 }
