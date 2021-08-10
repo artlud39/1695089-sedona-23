@@ -1,7 +1,5 @@
 
 .reason-one__wrapper {
-  max-width: $mobile-wrapper;
-  margin: 0 auto;
   text-align: center;
   display: flex;
   flex-wrap: wrap;
@@ -29,10 +27,6 @@
 
 
 @media (min-width:$tablet-width) {
-  .reason-one__wrapper {
-    max-width: $tablet-wrapper;
-    flex-wrap: nowrap;
-  }
   .reason-one__text {
     max-width: 30%;
     padding: 43px 36px 40px;
@@ -45,10 +39,6 @@
 
 
 @media (min-width: $desktop-width) {
-  .reason-one__wrapper {
-    max-width: $desktop-wrapper;
-    flex-wrap: nowrap;
-  }
   .reason-one__text {
     max-width: 400px;
     padding: 47px 53px 56px;

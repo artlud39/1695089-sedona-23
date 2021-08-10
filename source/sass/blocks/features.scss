@@ -1,12 +1,6 @@
-
-.features__wrapper {
-  max-width: $mobile-wrapper ;
-  margin: 0 auto;
-  text-align: center;
-}
-
 .features__list {
   @include reset-list;
+  text-align: center;
 }
 .features__item {
   padding-left: 70px;
@@ -15,10 +9,6 @@
 
 
 @media (min-width:$tablet-width) {
-  .features__wrapper {
-    max-width: $tablet-wrapper;
-    padding: 60px 40px;
-  }
   .features__list {
     display: flex;
   }
@@ -31,9 +21,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .features__wrapper {
-    max-width: $desktop-wrapper;
-  }
   .features__text {
     padding: 0 20px;
   }

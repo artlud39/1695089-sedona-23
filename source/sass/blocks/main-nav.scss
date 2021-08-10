@@ -5,27 +5,18 @@
   color: $white;
   text-decoration: none;
 }
-.main-nav__wrapper {
-  max-width: $mobile-wrapper;
-  margin: 0 auto;
-}
    @media (min-width:$tablet-width) {
-     .main-nav__wrapper {
-       max-width: $tablet-wrapper;
-     }
      .main-nav__toggle {
        display: none;
      }
      .main-nav__list {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
     }
    }
 
    @media (min-width: $desktop-width) {
-     .main-nav__wrapper {
-       max-width: $desktop-wrapper;
-     }
+
    }
 
 

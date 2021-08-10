@@ -1,6 +1,4 @@
 .page-footer__wrapper {
-  max-width: $mobile-wrapper;
-  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -8,7 +6,6 @@
 
 @media (min-width:$tablet-width) {
   .page-footer__wrapper {
-    max-width: $tablet-wrapper;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -16,7 +13,5 @@
   }
 
 @media (min-width: $desktop-width) {
-  .page-footer__wrapper {
-    max-width:  $desktop-wrapper;
-  }
+
   }

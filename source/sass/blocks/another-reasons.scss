@@ -1,16 +1,11 @@
 .another-reasons {
   background-color: #EEE;
 }
-.another-reasons__wrapper {
-  max-width: $mobile-wrapper;
-  margin: 0 auto;
-  text-align: center;
-}
+
 .another-reasons__text{
   @include reset;
   padding: 26px;
   box-sizing: border-box;
-
 }
 
 
@@ -36,10 +31,6 @@
 }
 
 @media (min-width:$tablet-width) {
-  .another-reasons__wrapper {
-    max-width: $tablet-wrapper;
-    flex-wrap: wrap;
-  }
   .another-reasons__list {
     display: flex;
     flex-wrap: wrap;
@@ -56,10 +47,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .another-reasons__wrapper {
-    max-width: $desktop-wrapper;
-    flex-wrap: wrap;
-  }
   .another-reasons__item {
     border-bottom: none;
     width: 400px;
