@@ -1,0 +1,30 @@
+.features__list {
+  @include reset-list;
+  text-align: center;
+}
+.features__item {
+  padding-left: 70px;
+
+}
+
+
+@media (min-width:$tablet-width) {
+  .features__list {
+    display: flex;
+  }
+  .features__item {
+    padding: 98px 20px 0;
+  }
+  .features__item--gift {
+    order: 3;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features__text {
+    padding: 0 20px;
+  }
+  .features__item {
+    padding: 98px 30px 0;
+  }
+}

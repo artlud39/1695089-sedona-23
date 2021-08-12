@@ -1,5 +1,5 @@
 .search__wrapper {
-  width: 280px;
+  max-width: $mobile-wrapper;
   margin: 0 auto;
   text-align: center;
   padding: 33px 0 49px;
@@ -23,3 +23,23 @@
 .search__text {
   line-height: 24px;
 }
+
+@media (min-width:$tablet-width) {
+  .search__wrapper {
+    width: 458px;
+    padding: 57px 0 58px;
+  }
+  .search__title {
+    font-size: 30px;
+  }
+  .search__text {
+    line-height: 21px;
+  }
+  }
+
+
+@media (min-width: $desktop-width) {
+  .search__wrapper {
+    padding: 57px 0 66px;
+  }
+  }
