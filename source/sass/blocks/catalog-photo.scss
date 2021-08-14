@@ -1,6 +1,9 @@
 .catalog-photo__figure {
   @include reset;
 }
+.catalog-photo__figure p {
+  @include reset;
+}
 .catalog-photo__figcaption-subtitle {
   @include reset;
   font-weight: bold;
