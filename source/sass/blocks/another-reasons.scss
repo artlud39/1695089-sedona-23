@@ -21,6 +21,7 @@
   border-bottom: none;
   padding: 0 10px;
   box-sizing: border-box;
+  width: 100%;
 }
 
 .another-reasons__item-title {
@@ -38,7 +39,7 @@
   }
   .another-reasons__item{
     border-bottom: none;
-    width: 256px;
+    max-width: 256px;
     padding: 41px 34px 63px;
   }
   .another-reasons__item-title {
@@ -49,7 +50,7 @@
 @media (min-width: $desktop-width) {
   .another-reasons__item {
     border-bottom: none;
-    width: 400px;
+    max-width: 400px;
     padding: 43px 43px 62px;
   }
 }

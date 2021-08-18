@@ -30,9 +30,9 @@
           </ul>
         </div>
       </nav>
-      <a class="page-header__logo" href="">
+      <div class="page-header__logo">
         <img src="img/text-index.svg" width="282" height="214" alt="Сине-белая надпись добро пожаловать в Седону">
-      </a>
+      </div>
     </header>
     <main class="page-main">
       <h1 class="visually-hidden"> Форма обратной связи</h1>
@@ -52,86 +52,94 @@
         <h2 class="visually-hidden">Информация о Вас</h2>
         <div class="info__wrapper">
           <form class="info__form form" action="https://echo.htmlacademy.ru" method="POST">
-            <fieldset class="form__feildset form__personal-info">
-              <legend class="form__legend form__legend--uppercase">Представьтесь</legend>
+            <fieldset class="form__fieldset-personal-info">
+              <legend class="form__legend form__legend--uppercase">Представьтесь:</legend>
               <p>
-                <label class="form__label"> <span class="form__text">Имя*:</span>
-                  <input class="form__input form__input--style" type="text" name="first-name" placeholder="Петр"
+                <label class="form__personal-info-label"> <span class="form__personal-info-text">Имя*:</span>
+                  <input class="form__input-name form__input--style" type="text" name="first-name" placeholder="Петр"
                     required>
                 </label>
               </p>
               <p>
-                <label class="form__label"> <span class="info__form__text">Фамилия*:</span>
-                  <input class="form__input form__input--style" type="text" name="last-name" placeholder="Иванов"
-                    required>
+                <label class="form__personal-info-label"> <span class="form__personal-info-text">Фамилия*:</span>
+                  <input class="form__input-last-name form__input--style" type="text" name="last-name"
+                    placeholder="Иванов" required>
                 </label>
               </p>
               <p>
-                <label class="form__label"> <span class="info__form__text">Отчество</span>
-                  <input class="form__input form__input--style" type="text" name="patronymic"
+                <label class="form__personal-info-label"> <span class="form__personal-info-text">Отчество:</span>
+                  <input class="form__input-patronymic form__input--style" type="text" name="patronymic"
                     placeholder="Александрович">
                 </label>
               </p>
             </fieldset>
 
-            <fieldset class="form__feildset form__information">
-              <legend class="form__legend form__legend--uppercase">Контактная информация</legend>
-              <p>
-                <label class="form__label"> <span class="form__text">Контактный телефон*:</span>
-                  <input class="form__input form__input--style" type="tel" name="tel" placeholder="Введите телефон"
-                    required>
-                </label>
-              </p>
-              <p>
-                <label class="form__label"> <span class="form__text">Электронная почта*:</span>
-                  <input class="form__input form__input--style" type="email" name="emal" placeholder="Введите e-mail"
-                    required>
-                </label>
-              </p>
+            <fieldset class="form__fieldset-information">
+              <legend class="form__legend form__legend--uppercase">Контактная информация:</legend>
+              <div class="form__information-inner">
+                <p>
+                  <label class="form__information-label"> <span class="form__text-information"> <span
+                        class="form__text--none">Контактный</span>телефон*:</span>
+                    <input class="form__input-tel form__input--style" type="tel" name="tel"
+                      placeholder="Введите телефон" required>
+                  </label>
+                </p>
+                <p>
+                  <label class="form__information-label"> <span class="form__text-information">Электронная
+                      почта*:</span>
+                    <input class="form__input-email form__input--style" type="email" name="emal"
+                      placeholder="Введите e-mail" required>
+                  </label>
+                </p>
+              </div>
             </fieldset>
-            <fieldset class="form__feildset form__impressions">
-              <legend class="form__legend form__legend--uppercase">Ваше общее впечатление</legend>
-              <p>
-                <label class="form__label"> <span class="form__text">Скорее положительные</span>
-                  <input class="form__impression " type="radio" name="impression" value="good">
-                </label>
-              </p>
-              <p>
-                <label class="form__label"> <span class="form__text">Скорее отрицательные</span>
-                  <input class="form__impression" type="radio" name="impression" value="bad">
-                </label>
-              </p>
-              <p>
-                <label class="form__label"> <span class="form__text">Затрудняюсь ответить</span>
-                  <input class="form__impression" type="radio" name="impression" value="i dont know">
-                </label>
-              </p>
+
+            <fieldset class="form__fieldset-impressions">
+              <legend class="form__legend form__legend--uppercase">Ваше общее впечатление:</legend>
+              <ul class="form__impressions-list">
+                <li class="form__impressions-item">
+                  <input class="form__input-impression" id="good-impression" type="radio" name="impression" value="good">
+                  <label class="form__impressions-label form__text--bold" for="good-impression">Скорее положительные</label>
+                </li>
+                <li class="form__impressions-item">
+                  <input class="form__input-impression" id="bad-impression" type="radio" name="impression" value="bad">
+                  <label class="form__impressions-label form__text--bold" for="bad-impression">Скорее отрицательные</label>
+                </li>
+                <li class="form__impressions-item">
+                  <input class="form__input-impression" id="dont-know-impression" type="radio" name="impression" value="i dont know">
+                  <label class="form__impressions-label form__text--bold" for="dont-know-impression">Затрудняюсь ответить</label>
+                </li>
+              </ul>
             </fieldset>
-            <fieldset class="form__feildset form__sight">
-              <legend class="form__legend form__legend--uppercase">Посещенные достопримечательности</legend>
-              <p>
-                <label class="form__label"> <span class="form__text">Мост Дьявола</span>
-                  <input class="form__sight" type="checkbox" name="sight" value="devil's bridge">
-                </label>
-              </p>
-              <p>
-                <label class="form__label"> <span class="form__text">Гора-Колокол</span>
-                  <input class="form__sight" type="checkbox" name="sight" value="mountain bell">
-                </label>
-              </p>
-              <p>
-                <label class="form__label"> <span class="form__text">Слайд-парк</span>
-                  <input class="form__sight" type="checkbox" name="sight" value="slide park">
-                </label>
-              </p>
-              <p>
-                <label class="form__label"> <span class="form__text">Красные скалы</span>
-                  <input class="form__sight" type="checkbox" name="sight" value="red rocks">
-                </label>
-              </p>
+
+            <fieldset class="form__fieldset-sight">
+              <legend class="form__legend form__legend--uppercase">Посещенные <br> достопримечательности:</legend>
+              <div class="form__fieldset-sight-inner">
+                <p>
+                  <label class="form__label"> <span class="form__text form__text--bold">Мост Дьявола</span>
+                    <input class="form__sight" type="checkbox" name="sight" value="devil's bridge">
+                  </label>
+                </p>
+                <p>
+                  <label class="form__label"> <span class="form__text form__text--bold">Гора-Колокол</span>
+                    <input class="form__sight" type="checkbox" name="sight" value="mountain bell">
+                  </label>
+                </p>
+                <p>
+                  <label class="form__label"> <span class="form__text form__text--bold">Слайд-парк</span>
+                    <input class="form__sight" type="checkbox" name="sight" value="slide park">
+                  </label>
+                </p>
+                <p>
+                  <label class="form__label"> <span class="form__text form__text--bold">Красные скалы</span>
+                    <input class="form__sight" type="checkbox" name="sight" value="red rocks">
+                  </label>
+                </p>
+              </div>
             </fieldset>
-            <fieldset class="form__feildset form__comments">
-              <legend class="form__legend form__legend--uppercase">Опишите свои эмоции</legend>
+
+            <fieldset class="form__fieldset-comments">
+              <legend class="form__legend form__legend--uppercase">Опишите свои эмоции:</legend>
               <p>
                 <label class="form__label">
                   <textarea class="form__comments-text" name="comments" cols="30" rows="10"
@@ -139,8 +147,9 @@
                 </label>
               </p>
             </fieldset>
+
             <button class="form__button" type="submit">Отправить отзыв</button>
-            <p> *-обязательные поля</p>
+            <p class="form__footnote"> *-обязательные поля</p>
           </form>
         </div>
       </section>
@@ -175,9 +184,11 @@
     <section class="popap-successfully">
       <div class="popap-successfully__wrapper">
         <h2 class="popap-successfully__title"> Ваш озтзыв оставлен!</h2>
-        <p class="popap-successfully__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем его на сайте.</p>
+        <p class="popap-successfully__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы
+          опубликуем его на сайте.</p>
       </div>
-      <div class="popap-successfully__button-inner"><button class="popap-successfully__button" type="button">Закрыть окно</button></div>
+      <div class="popap-successfully__button-inner"><button class="popap-successfully__button" type="button">Закрыть
+          окно</button></div>
     </section>
   </div>
 </body>
