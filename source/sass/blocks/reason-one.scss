@@ -28,23 +28,21 @@
 
 @media (min-width:$tablet-width) {
   .reason-one__text {
-    max-width: 30%;
+    max-width: 33%;
     padding: 43px 36px 40px;
   }
   .reason-one__image {
-    width: 70%;
+    width: 67%;
     height: 256px;
+  }
+  .catalog-photo__figcaption {
+    background-color: #F2F2F2;
   }
 }
 
 
 @media (min-width: $desktop-width) {
   .reason-one__text {
-    max-width: 400px;
     padding: 47px 53px 56px;
-  }
-  .reason-one__image {
-    width: 800px;
-    height: 256px;
   }
 }

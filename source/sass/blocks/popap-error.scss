@@ -1,0 +1,55 @@
+.popap-error {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-width: 320px;
+  display: none;
+}
+
+.popap-error__wrapper {
+  max-width: 236px;
+  text-align: center;
+  padding: 30px 39px 35px 37px;
+}
+
+.popap-error__title {
+  @include reset;
+  font-size: 18px;
+  color: #000;
+}
+
+.popap-error__text {
+  @include reset;
+  line-height: 24px;
+  padding-top: 40px;
+  padding-bottom: 22px;
+  color: #333;
+}
+
+.popap-error__button {
+  @include reset;
+  display: inline-block;
+  background-color: $lightblue;
+  border: none;
+  color: $white;
+  width: 180px;
+  height: 58px;
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width:$tablet-width) {
+
+}
+
+
+@media (min-width: $desktop-width) {
+
+}

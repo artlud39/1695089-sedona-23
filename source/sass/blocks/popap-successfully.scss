@@ -1,0 +1,60 @@
+.popap-successfully {
+  position: absolute;
+  bottom: 0;
+  max-width: 320px;
+  display: none;
+}
+
+
+.popap-successfully__wrapper {
+  max-width: 280px;
+  margin: 0 auto;
+  padding: 40px 42px 35px 41px;
+  text-align: center;
+}
+.popap-successfully__button-inner {
+  background-color: #F2F2F2;
+  text-align: center;
+  padding: 20px;
+
+}
+.popap-successfully__title {
+  @include reset;
+  font-size: 18px;
+  color: #000;
+}
+
+.popap-successfully__text {
+  @include reset;
+  line-height: 24px;
+  padding-top: 40px;
+  padding-bottom: 22px;
+  color: #333;
+}
+
+.popap-successfully__button {
+  text-transform: uppercase;
+  @include reset;
+
+  background-color: $lightblue;
+  border: none;
+  color: $white;
+  width: 280px;
+  height: 58px;
+}
+
+
+
+
+
+
+
+
+@media (min-width:$tablet-width) {
+
+}
+
+
+@media (min-width: $desktop-width) {
+
+}

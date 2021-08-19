@@ -2,17 +2,38 @@
   text-align: center;
 }
 .catalog-video__wrapper {
-  width: 320px;
-  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 .catalog-video__presentation {
-  width: 280px;
+  max-width: 450px;
   text-align: center;
+  box-sizing: border-box;
 }
 .catalog-video__presentation-title {
   font-size: 18px;
   font-weight: bold;
+}
+
+
+
+
+
+
+@media (min-width:$tablet-width) {
+  .catalog-video__presentation-title {
+    font-size: 30px;
+  }
+  .catalog-video__presentation{
+    max-width: $tablet-width;
+    padding: 0 160px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-video__presentation{
+    max-width: $desktop-width;
+    padding: 0 370px;
+  }
 }
