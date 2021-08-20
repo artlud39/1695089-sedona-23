@@ -1,11 +1,32 @@
+.features__wrapper {
+  padding: 24px 0;
+}
 .features__list {
   @include reset-list;
-  text-align: center;
 }
 .features__item {
+  position: relative;
   padding-left: 70px;
 
 }
+
+
+.features__icon {
+position: absolute;
+top: 0;
+left: 21px;
+transform: translateY(-25%);
+}
+
+
+
+
+
+
+
+
+
+
 
 
 @media (min-width:$tablet-width) {

@@ -3,6 +3,28 @@
   display: flex;
   justify-content: center;
 }
+
+.social__link svg {
+  width: 46px;
+  height: 48px;
+}
+
 .social__link {
   margin-right: 6px;
+
+  &:hover rect,
+  &:focus rect {
+    fill:#669EC0;
+
+  }
+  &:active rect {
+    fill:#5496BD;
+  }
+  &:active path {
+    fill-opacity: .3;
+  }
 }
+
+
+
+

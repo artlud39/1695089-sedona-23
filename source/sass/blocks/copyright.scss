@@ -1,8 +1,21 @@
 
 .copyright {
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 .copyright__text {
   font-weight: 400;
   text-transform: uppercase;
+  padding-right: 7px;
+}
+
+.copyright__link svg {
+  width: 27px;
+  height: 34px;
+    path {
+      &:hover {
+        fill: #81B3D2;
+      }
+    }
+
 }
