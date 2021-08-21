@@ -10,17 +10,82 @@
 
 }
 
+.features__item--house::before {
+  content: '';
+  position: absolute;
+  top:0;
+  left: 21px;
+  width: 39px;
+  height: 38px;
+  background-image: url(../../img/icons/icon-house.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  transform: translateY(-25%);
 
-.features__icon {
-position: absolute;
-top: 0;
-left: 21px;
-transform: translateY(-25%);
+  @media (min-width:$tablet-width) {
+    top: 26px;
+    left: 50%;
+    width: 75px;
+    height: 72px;
+    background-image: url(../../img/icons/icon-house-tablet.svg);
+    transform: translateX(-50%);
+  }
+  @media (min-width: $desktop-width) {
+    background-image: url(../../img/icons/icon-house-desktop.svg)
+  }
+
 }
 
 
+.features__item--gift::before {
+  content: '';
+  position: absolute;
+  top:0;
+  left: 21px;
+  width: 39px;
+  height: 38px;
+  background-image: url(../../img/icons/icon-gift.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  transform: translateY(-25%);
 
+  @media (min-width:$tablet-width) {
+    top: 26px;
+    left: 50%;
+    width: 64px;
+    height: 75px;
+    background-image: url(../../img/icons/icon-gift-tablet.svg);
+    transform: translateX(-50%);
+  }
+  @media (min-width: $desktop-width) {
+    background-image: url(../../img/icons/icon-gift-desktop.svg)
+  }
+}
 
+.features__item--burger::before {
+  content: '';
+  position: absolute;
+  top:0;
+  left: 21px;
+  width: 39px;
+  height: 38px;
+  background-image: url(../../img/icons/icon-burger.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  transform: translateY(-25%);
+
+  @media (min-width:$tablet-width) {
+    top: 26px;
+    left: 50%;
+    width: 76px;
+    height: 69px;
+    background-image: url(../../img/icons/icon-burger-tablet.svg);
+    transform: translateX(-50%);
+  }
+  @media (min-width: $desktop-width) {
+    background-image: url(../../img/icons/icon-burger-desktop.svg)
+  }
+}
 
 
 
@@ -32,6 +97,7 @@ transform: translateY(-25%);
 @media (min-width:$tablet-width) {
   .features__list {
     display: flex;
+    text-align: center;
   }
   .features__item {
     padding: 98px 20px 0;
