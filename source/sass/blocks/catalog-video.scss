@@ -5,6 +5,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  position: relative;
+  border-top: 1px solid #F2F2F2;
 }
 .catalog-video__presentation {
   max-width: 450px;
@@ -16,6 +18,61 @@
   font-weight: bold;
 }
 
+
+/*-----------------catalog-video------------------------*/
+.catalog-video__progress-wrapper {
+  position: absolute;
+  left: 0;
+  top: -45px;
+  background-color: rgba(0,0,0, .6);
+  width: 280px;
+  width: 100%;
+  padding: 22px 23px 20px 22px;
+  box-sizing: border-box;
+}
+.catalog-video__progress {
+  position: relative;
+  width: 235px;
+  height: 3px;
+  background-color: rgba(255,255,255, .2);
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 34px;
+    width: 13px;
+    height: 13px;
+    background-color: #fff;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+}
+
+.catalog-video__controls-wrapper {
+  background-color: #F2F2F2;
+  max-width: $mobile-wrapper;
+  width: 100%;
+
+}
+
+.catalog-video__controls-inner {
+  padding: 23px;
+  display: flex;
+  cursor: pointer;
+  position: relative;
+}
+
+.catalog-video__control-subtitlies {
+  padding-left: 133px;
+  cursor: pointer;
+}
+
+.catalog-video__control-fullscreen {
+  padding-left: 31px;
+  cursor: pointer;
+}
 
 
 
@@ -29,11 +86,75 @@
     max-width: $tablet-width;
     padding: 0 160px;
   }
+  .catalog-video__wrapper {
+    border-top: none;
+  }
+
+  /*-----------------catalog-video------------------------*/
+.catalog-video__controls {
+width: 648px;
+position: absolute;
+bottom: 0;
+left: center;
+}
+.catalog-video__progress-wrapper {
+  position: static;
+  background-color: rgba(255,255,255, .2);
+  width: 389px;
+  padding: 0;
+  margin-left: 42px;
+}
+.catalog-video__progress {
+  width: 389px;
+}
+
+.catalog-video__controls-wrapper {
+  background-color: rgba(0,0,0, .6);
+  max-width: $tablet-wrapper;
+  width: 100%;
+}
+
+.catalog-video__controls-inner {
+  align-items: center;
+}
+.catalog-video__control-repeat {
+    path {
+      fill: #FFF;
+    }
+}
+.catalog-video__control-subtitlies {
+  padding-left: 42px;
+  path {
+    fill: #FFF;
+  }
+}
+
+.catalog-video__control-fullscreen {
+  padding-left: 31px;
+    path {
+      fill: #FFF;
+    }
+}
+
+
 }
 
 @media (min-width: $desktop-width) {
   .catalog-video__presentation{
     max-width: $desktop-width;
     padding: 0 370px;
+  }
+
+
+
+   /*-----------------catalog-video------------------------*/
+.catalog-video__controls {
+  width: 800px;
+  }
+  .catalog-video__progress-wrapper {
+    width: 540px;
+  }
+  .catalog-video__progress {
+    width: 540px;
   }
 }
