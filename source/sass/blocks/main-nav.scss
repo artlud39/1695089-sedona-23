@@ -143,11 +143,20 @@
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 5;
   @media (min-width:$tablet-width) {
     z-index: 11;
    }
 }
+.main-nav__logotype-img {
+  width: 102px;
+  height: 84px;
 
+   @media (min-width: $desktop-width) {
+    width: 187px;
+    height: 97px;
+   }
+}
 
 
    @media (min-width:$tablet-width) {
