@@ -11,20 +11,22 @@
 
 .social__link {
   margin-right: 6px;
-
-  &:hover rect,
-  &:focus rect {
-    fill:#669EC0;
-
-  }
-  &:active rect {
-    fill:#5496BD;
-  }
-  &:active path {
-    fill-opacity: .3;
-  }
 }
 
 
+.social__icon  {
+  fill:#81B3D2;
 
+  &:hover,
+  &:focus {
+    fill: #669EC0;;
+  }
+  &:active {
+    fill:#5496BD;
+  }
+}
+
+/*social__icon path {
+  fill-opacity: .6;
+}*/
 

@@ -12,10 +12,16 @@
 .copyright__link svg {
   width: 27px;
   height: 34px;
-    path {
-      &:hover {
-        fill: #81B3D2;
-      }
-    }
+}
 
+.copyright-icon {
+  fill: #000;
+  &:hover,
+  &:focus {
+    fill: #81B3D2;
+  }
+  &:active {
+    fill: #000;
+    fill-opacity: .3;
+  }
 }
