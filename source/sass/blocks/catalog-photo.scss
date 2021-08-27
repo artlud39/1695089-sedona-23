@@ -19,7 +19,7 @@ align-items: center;
 
 .catalog-photo__photo-image-inner {
   @include reset;
-  height: 280px;
+  height: 100%;
 }
 
 .catalog-photo-item__parameter-list {
@@ -53,7 +53,9 @@ align-items: center;
 }
 
 .catalog-photo__image {
-  width: 280px;
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 .line-break {
