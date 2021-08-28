@@ -26,7 +26,10 @@
   }
 }
 
-/*social__icon path {
-  fill-opacity: .6;
-}*/
+.social__icon path {
+  fill: #fff;
+  &:active {
+    fill: rgba(255,255,255, .3);
+  }
+}
 
