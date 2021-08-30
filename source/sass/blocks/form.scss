@@ -31,6 +31,12 @@
  box-sizing: border-box;
  width: 100%;
  padding-left: 22px;
+ cursor: pointer;
+  &:hover,
+  &:focus {
+    background-color: #E5E5E5;
+    outline: #E5E5E5;
+  }
   &::-webkit-input-placeholder {
     color: #000;
     font-weight: bold;
@@ -54,6 +60,15 @@
   font-size: 21px;
   font-weight: bold;
   box-sizing: border-box;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    background-color: #669EC0;
+  }
+  &:active {
+    background-color: #5496BD;
+    color: rgba(255,255,255, .3);
+  }
 }
 .form__text--bold {
   font-weight: bold;
@@ -118,6 +133,7 @@
   box-sizing: border-box;
   @include reset;
 
+
   &:checked+label::after {
     content: '';
     position: absolute;
@@ -128,6 +144,10 @@
     background-color: #333;
     border-radius: 50%;
     transform: translateY(25%);
+    cursor: pointer;
+  }
+  &:checked+label:active::after {
+    background-color: rgba(51, 51, 51, .3);
   }
 }
 
@@ -153,9 +173,15 @@
   background-color: #F2F2F2;
   border-radius: 50%;
   transform: translateY(-25%);
+  cursor: pointer;
 }
-
-
+.form__impressions-label:hover:before,
+.form__impressions-label:focus:before {
+  background-color: #E5E5E5;
+}
+.form__impressions-label:active:before {
+  background-color: #D5D5D5;
+}
 
 
 
@@ -194,6 +220,7 @@
 .form__sight-label {
   position: relative;
   padding-left: 75px;
+  cursor: pointer;
 }
 
 .form__sight-label::before {
@@ -206,6 +233,13 @@
   background-color: #F2F2F2;
   transform: translateY(-25%);
 }
+.form__sight-label:hover::before,
+.form__sight-label:focus:before {
+  background-color: #E5E5E5;
+}
+.form__sight-label:active:before {
+  background-color: #D5D5D5;
+}
 .form__input-sight:checked + label::after {
   content: '';
   position: absolute;
@@ -213,12 +247,14 @@
   left: 12px;
   width: 24px;
   height: 17px;
-  background-image: url(../../img//icons/icon-tick.svg);
+  background-image: url(../../img/icons/icon-tick.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
   transform: translateY(25%);
 }
-
+.form__input-sight:checked + label:active:after {
+  background-image: url(../../img/icons/icon-tick-active.svg);
+}
 
 /*--------------------form__fieldset-comments--------------------*/
 

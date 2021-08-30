@@ -15,6 +15,19 @@
   color: $white;
   text-decoration: none;
   padding: 15px 32px;
+  border: none;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    background-color: #669EC0;
+  }
+  &:active {
+    background-color: #5496BD;
+    color: rgba(255,255,255, .3);
+  }
+  &:disabled {
+    background-color: #E5E5E5;
+  }
 }
 .search__title {
   font-weight: bold;
@@ -23,6 +36,10 @@
 .search__text {
   line-height: 24px;
 }
+
+
+
+
 
 @media (min-width:$tablet-width) {
   .search__wrapper {
