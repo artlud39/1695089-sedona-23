@@ -3,16 +3,29 @@
 }
 .features__list {
   @include reset-list;
+  padding-right: 20px;
 }
 .features__item {
   position: relative;
   padding-left: 70px;
 }
-
+.features__title {
+  @include reset;
+  padding: 10px 0;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+}
+.features__text {
+  @include reset;
+  font-size: 14px;
+  line-height: 21px;
+  padding: 10px 0;
+}
 .features__item--house::before {
   content: '';
   position: absolute;
-  top:0;
+  top: 10px;
   left: 21px;
   width: 39px;
   height: 38px;
@@ -22,7 +35,7 @@
   transform: translateY(-25%);
 
   @media (min-width:$tablet-width) {
-    top: 26px;
+    top: 35px;
     left: 50%;
     width: 75px;
     height: 72px;
@@ -39,8 +52,8 @@
 .features__item--gift::before {
   content: '';
   position: absolute;
-  top:0;
-  left: 21px;
+  top: 10px;
+  left: 24px;
   width: 39px;
   height: 38px;
   background-image: url(../../img/icons/icon-gift.svg);
@@ -49,7 +62,7 @@
   transform: translateY(-25%);
 
   @media (min-width:$tablet-width) {
-    top: 26px;
+    top: 32px;
     left: 50%;
     width: 64px;
     height: 75px;
@@ -64,8 +77,8 @@
 .features__item--burger::before {
   content: '';
   position: absolute;
-  top:0;
-  left: 21px;
+  top: 19px;
+  left: 19px;
   width: 39px;
   height: 38px;
   background-image: url(../../img/icons/icon-burger.svg);
@@ -74,7 +87,7 @@
   transform: translateY(-25%);
 
   @media (min-width:$tablet-width) {
-    top: 26px;
+    top: 36px;
     left: 50%;
     width: 76px;
     height: 69px;
@@ -97,12 +110,29 @@
   .features__list {
     display: flex;
     text-align: center;
+    @include reset;
   }
   .features__item {
-    padding: 98px 20px 0;
+    max-width: 256px;
+    padding: 98px 10px 38px;
+    box-sizing: border-box;
+  }
+  .features__title {
+    font-size: 21px;
+    padding-top: 35px;
+    padding-bottom: 22px;
   }
   .features__item--gift {
     order: 3;
+  }
+  .features__text--house {
+    padding: 0 30px;
+  }
+  .features__text--burger{
+    padding: 0 40px;
+  }
+  .features__text--gift {
+    padding: 0 20px;
   }
 }
 
@@ -111,6 +141,7 @@
     padding: 0 20px;
   }
   .features__item {
+    max-width: 400px;
     padding: 98px 30px 0;
   }
 }

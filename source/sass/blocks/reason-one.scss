@@ -6,15 +6,19 @@
 }
 
 .reason-one__text {
+  position: relative;
   @include reset;
   background-color: $lightblue;
   color: $white;
-  padding: 55px 12px 39px;
+  padding: 75px 20px 39px;
   box-sizing: border-box;
+  line-height: 21px;
+  min-height: 211px;
 }
 .reason-one__text--bold {
   font-weight: bold;
   font-size: 18px;
+  line-height: 24px;
 }
 .reason-one__image-wrapper {
   @include reset;
@@ -27,8 +31,21 @@
 }
 
 
-
-
+.reason-one__text::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 37px;
+  background-image: url(../../img/reason-one-triangle.svg);
+  background-repeat: no-repeat;
+  background-position: 50% top;
+}
+.reason-one__text-number-reason {
+  display: inline-block;
+  padding: 13px 0 16px;
+}
 
 @media (min-width:$tablet-width) {
   .reason-one__text {
@@ -45,6 +62,16 @@
   }
   .catalog-photo__figcaption {
     background-color: #F2F2F2;
+  }
+  .reason-one__text::before {
+    display: none;
+  }
+  .reason-one__text-number-reason {
+    display: inline-block;
+    padding-bottom: 22px;
+  }
+  .reason-one__text--bold {
+    font-size: 21px;
   }
 }
 

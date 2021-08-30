@@ -2,11 +2,13 @@
   @include reset-list;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .social__link svg {
   width: 46px;
   height: 48px;
+
 }
 
 .social__link {
@@ -28,8 +30,8 @@
 
 .social__icon path {
   fill: #fff;
-  &:active {
-    fill: rgba(255,255,255, .3);
-  }
 }
 
+.social__icon:active path {
+    fill: rgba(255,255,255, .3);
+}

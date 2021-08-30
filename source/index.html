@@ -20,7 +20,7 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active site-list__item--main">
-              <a class="site-list__item-link" href="#">Главная</a>
+              <a class="site-list__item-link site-list__item-link--current" href="#">Главная</a>
             </li>
             <li class="site-list__item site-list__item--catalog">
               <a class="site-list__item-link" href="catalog.html">Фото и Видео</a>
@@ -64,7 +64,7 @@
       <section class="reason-one">
         <div class="reason-one__wrapper">
           <h2 class="visually-hidden">Первая причина</h2>
-          <p class="reason-one__text"> <span class="reason-one__text--bold">Настоящий городок</span> <br> — №1 — <br>
+          <p class="reason-one__text"> <span class="reason-one__text--bold">Настоящий городок</span> <br> <span class="reason-one__text-number-reason">— №1 — </span> <br>
             Седона не атракцион для туристов, там течет своя жизнь</p>
           <p class="reason-one__image-wrapper">
             <picture>
@@ -86,15 +86,15 @@
           <ul class="features__list">
             <li class="features__item features__item--house">
               <h2 class="features__title">Жилье</h2>
-              <p class="features__text">Жилье Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              <p class="features__text features__text--house">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </li>
             <li class="features__item features__item--gift">
               <h2 class="features__title">Сувениры</h2>
-              <p class="features__text">Не только китайского, но и местного производства!</p>
+              <p class="features__text features__text--gift">Не только китайского, но и местного производства!</p>
             </li>
             <li class="features__item features__item--burger">
               <h2 class="features__title">Еда</h2>
-              <p class="features__text">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+              <p class="features__text features__text--burger">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
             </li>
           </ul>
         </div>
@@ -103,7 +103,7 @@
       <section class="reason-two">
         <div class="reason-two__wrapper">
           <h2 class="visually-hidden">Вторая причина</h2>
-          <p class="reason-two__text"> <span class="reason-one__text--bold">Там есть мост дьявола</span> <br> — №2 —
+          <p class="reason-two__text"> <span class="reason-two__text--bold">Там есть мост дьявола</span> <br><span class="reason-two__text-number-reason">— №2 — </span>
             <br>
             Да, по нему можно пройти! Если вы осмелитесь, конечно
           </p>
@@ -130,21 +130,21 @@
             <li class="another-reasons__item">
               <h3 class="another-reasons__item-title">Небольшая площадь</h3>
               <p class="another-reasons__item-text">
-                — №3 — <br>все интересные места
+               <span class="another-reasons__text-number">— №3 —</span><br>все интересные места
                 находятся очень близко
               </p>
             </li>
             <li class="another-reasons__item">
               <h3 class="another-reasons__item-title">Красивая дорога</h3>
-              <p class="another-reasons__item-text">
-                — №4 — <br>ехать в Седону из
+              <p class="another-reasons__item-text another-reasons__item-text--padding">
+                <span class="another-reasons__text-number">— №4 —</span><br>ехать в Седону из
                 Лас-Вегаса совсем не скучно!
               </p>
             </li>
             <li class="another-reasons__item">
-              <h3 class="another-reasons__item-title">Мало туристов</h3>
+              <h3 class="another-reasons__item-title another-reasons__item-title-padding">Мало туристов</h3>
               <p class="another-reasons__item-text">
-                — №5 — <br>Большинство едет в
+                <span class="another-reasons__text-number">— №5 —</span> <br>Большинство едет в
                 гранд каньон и толпится там
               </p>
             </li>
@@ -159,7 +159,7 @@
           <p class="search__text">
             Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
           </p>
-          <a class="search__link" href="#"> Найти гостиницу</a>
+          <button class="search__link" href="#"> Найти гостиницу</button>
         </div>
       </section>
 
@@ -219,7 +219,7 @@
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy">
             <span class="visually-hidden">HTML Academy</span>
             <svg class="copyright-icon" width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="img/sprite.svg#icon-copyright"></use>
+              <use xlink:href="img/sprite.svg#htmlacademy"></use>
             </svg>
           </a>
         </div>
