@@ -2,9 +2,10 @@
   max-width: $mobile-wrapper;
   margin: 0 auto;
   text-align: center;
-  padding: 33px 0 49px;
+  padding: 33px 20px 49px;
 }
 .search__link {
+  font-family: inherit;
   width: 100%;
   box-sizing: border-box;
   font-size: 21px;
@@ -30,13 +31,15 @@
   }
 }
 .search__title {
+  @include reset;
   font-weight: bold;
   font-size: 21px;
 }
 .search__text {
+  @include reset;
   line-height: 24px;
+  padding: 20px 0 30px;
 }
-
 
 
 
@@ -50,7 +53,7 @@
     font-size: 30px;
   }
   .search__text {
-    line-height: 21px;
+    padding: 35px 0 35px;
   }
   }
 

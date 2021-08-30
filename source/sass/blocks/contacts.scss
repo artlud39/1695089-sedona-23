@@ -1,5 +1,6 @@
 
 .contacts__text {
+  @include reset;
   font-size: 21px;
   font-weight: bold;
   text-transform: uppercase;

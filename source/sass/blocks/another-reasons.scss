@@ -16,20 +16,29 @@
   }
 }
 .another-reasons__item{
-  border-bottom: 1px solid #D6D6D6;
   text-align: center;
-  border-bottom: none;
-  padding: 0 10px;
+  border-bottom: 1px solid #D6D6D6;
   box-sizing: border-box;
   width: 100%;
+  padding: 0 35px 25px;
+  max-width: 256px;
 }
 
 .another-reasons__item-title {
   font-size: 18px;
+  @include reset;
+  padding: 25px 0 0;
 }
 .another-reasons__item-text {
   line-height: 21px;
+  @include reset;
 }
+.another-reasons__text-number {
+  display: inline-block;
+  padding: 10px 0 16px;
+}
+
+
 
 @media (min-width:$tablet-width) {
   .another-reasons__list {
@@ -40,10 +49,20 @@
   .another-reasons__item{
     border-bottom: none;
     max-width: 256px;
-    padding: 41px 34px 63px;
+    padding: 41px 40px 44px;
   }
   .another-reasons__item-title {
     font-size: 21px;
+    padding: 0;
+  }
+  .another-reasons__item-title-padding {
+    padding: 0 10px;
+  }
+  .another-reasons__text-number {
+    padding-bottom: 25px;
+  }
+  .another-reasons__item-text--padding {
+    padding: 0 23px;
   }
 }
 
