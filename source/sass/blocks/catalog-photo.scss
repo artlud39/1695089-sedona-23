@@ -22,18 +22,18 @@ align-items: center;
   height: 100%;
 }
 
-.catalog-photo-item__parameter-list {
+.catalog-photo__item-parameter-list {
   @include reset-list;
 }
-.catalog-photo-item__parameter-item-subtitle-text {
+.catalog-photo__item-parameter-item-subtitle-text {
   @include reset;
   font-weight: bold;
 }
-.catalog-photo-item__parameter-item-aftor-text {
+.catalog-photo__item-parameter-item-aftor-text {
   @include reset;
   text-transform: capitalize;
 }
-.catalog-photo-item__parameter-item-like-text {
+.catalog-photo__item-parameter-item-like-text {
   @include reset;
   font-weight: bold;
   padding-left: 37px;
@@ -79,35 +79,35 @@ align-items: center;
   .catalog-photo__item--bigger {
     grid-column: 1/3;
   }
-  .catalog-photo-item__parameter-list {
+  .catalog-photo__item-parameter-list {
     background-color: #F2F2F2;
     display: grid;
     grid-template-columns: 1fr min-content;
     grid-template-rows: 40px 40px;
   }
-  .catalog-photo-item__parameter-list--another-background {
+  .catalog-photo__item-parameter-list--another-background {
     background-color: #EAEAEA;
   }
-  .catalog-photo-item__parameter-item-aftor {
+  .catalog-photo__item-parameter-item-aftor {
     grid-row: 2/3;
   }
-  .catalog-photo-item__parameter-item-like {
+  .catalog-photo__item-parameter-item-like {
     grid-column: 2/3;
     grid-row: 1/3;
     align-self: center;
   }
 
-  .catalog-photo-item__parameter-item-subtitle-text {
+  .catalog-photo__item-parameter-item-subtitle-text {
     padding-left: 20px;
     padding-top: 20px;
     padding-bottom: 5px;
   }
-  .catalog-photo-item__parameter-item-aftor-text {
+  .catalog-photo__item-parameter-item-aftor-text {
    padding-left: 20px;
    padding-bottom: 12px;
   }
 
-  .catalog-photo-item__parameter-item-like-text {
+  .catalog-photo__item-parameter-item-like-text {
     padding-right: 19px;
     text-align: end;
     width: min-content;
@@ -130,14 +130,14 @@ align-items: center;
     .catalog-photo__item-wrapper {
      position: relative;
     }
-    .catalog-photo-item__parameter-list {
+    .catalog-photo__item-parameter-list {
       width: 100%;
       position: absolute;
       bottom: 0;
       background-color: rgba(0,0,0, .3);
       color: #fff;
     }
-    .catalog-photo-item__parameter-item-like-text {
+    .catalog-photo__item-parameter-item-like-text {
       &::before {
         background-image: url(../../img/catalog/like-icon-desktop.svg);
       }

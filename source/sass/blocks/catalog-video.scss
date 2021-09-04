@@ -53,12 +53,8 @@
       background-image: url(../../img/catalog/video-desktop@2x.jpg);
     }
   }
-
-
-
-
-
 }
+
 .catalog-video__progress-wrapper {
   position: absolute;
   left: 0;
@@ -94,22 +90,40 @@
   max-width: $mobile-wrapper;
   width: 100%;
 }
-
+.catalog-video__controls {
+  width: 280px;
+  }
 .catalog-video__controls-inner {
   padding: 23px;
   display: flex;
-  cursor: pointer;
   position: relative;
 }
-
-.catalog-video__control--subtitlies {
-  padding-left: 133px;
+.catalog-video__control-repeat {
+  border: none;
+  @include reset;
+  background: transparent;
+  width: 16px;
+  height: 20px;
   cursor: pointer;
 }
-
-.catalog-video__control--fullscreen {
-  padding-left: 31px;
+.catalog-video__control-subtitlies {
+  border: none;
+  @include reset;
+  background: transparent;
+  width: 32px;
+  height: 20px;
   cursor: pointer;
+  margin-left: 131px;
+}
+
+.catalog-video__control-fullscreen {
+  border: none;
+  @include reset;
+  background: transparent;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  margin-left: 31px;
 }
 .catalog-video__controls-icon {
     fill: #5C6870;
@@ -121,7 +135,6 @@
       fill-opacity: .3;
     }
     @media (min-width:$tablet-width) {
-      width: 100%;
       fill: #fff;
       &:hover,
       &:focus {
@@ -176,8 +189,8 @@ left: center;
 .catalog-video__controls-inner {
   align-items: center;
 }
-.catalog-video__control--subtitlies {
-  padding-left: 42px;
+.catalog-video__control-subtitlies {
+  margin-left: 42px;
 }
 }
 

@@ -10,10 +10,14 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 36px;
+    padding-top: 42px;
   }
   }
 
 @media (min-width: $desktop-width) {
-
+  .page-footer__wrapper {
+    justify-content: space-between;
+    width: 960px;
+    margin: 0 auto;
+  }
   }

@@ -147,7 +147,9 @@
 .main-nav--nojs .user-list__item {
   display: block;
 }
-
+.main-nav--nojs .main-nav__logotype {
+  z-index: -1;
+}
 
 .main-nav__logotype {
   position: absolute;
