@@ -1,0 +1,42 @@
+.advantages-catalog {
+  text-align: center;
+}
+  .advantages-catalog__slogan {
+    @include reset;
+    padding: 31px 9px 28px;
+    font-weight: bold;
+    font-size: 18px;
+   }
+
+   .advantages-catalog__intro {
+     @include reset;
+     line-height: 24px;
+     padding: 0 20px 31px;
+   }
+
+
+  @media (min-width:$tablet-width) {
+    .advantages-catalog__wrapper {
+      padding: 0 166px;
+    }
+    .advantages-catalog__slogan {
+      @include reset;
+      padding: 65px 0 33px;
+      font-size: 30px;
+     }
+     .advantages-catalog__intro {
+      padding: 0 0 77px;
+    }
+    }
+
+  @media (min-width: $desktop-width) {
+    .advantages-catalog__wrapper {
+      padding: 0 382px;
+    }
+    .advantages-catalog__slogan {
+      padding-top: 102px;
+    }
+     .advantages-catalog__intro {
+      padding-bottom: 80px;
+    }
+    }
