@@ -15,7 +15,7 @@
 <body class="page__body">
   <div class="page__wrapper">
     <header class="page-header">
-      <nav class="main-nav  main-nav--opened main-nav--nojs">
+      <nav class="main-nav  main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
@@ -43,8 +43,8 @@
         </a>
       </nav>
       <div class="page-header__logo page-header__logo--short-height">
-        <img class="page-header__logo-image page-header__logo-image--sedona" src="img/text-sedona.svg" width="229" height="39"
-          alt="Сине-белая надпись добро пожаловать в Седону">
+        <img class="page-header__logo-image page-header__logo-image--sedona" src="img/text-sedona.svg" width="229"
+          height="39" alt="Сине-белая надпись добро пожаловать в Седону">
       </div>
     </header>
     <main class="page-main">
@@ -67,35 +67,36 @@
         <div class="info__wrapper">
           <form class="info__form form" action="https://echo.htmlacademy.ru" method="POST">
             <fieldset class="form__fieldset-personal-info">
-              <legend class="form__legend form__legend--uppercase">Представьтесь:</legend>
+              <legend class="form__legend form__legend--uppercase form__legend--personal-info">Представьтесь:</legend>
               <p>
                 <label class="form__personal-info-label"> <span class="form__personal-info-text">Имя*:</span>
-                  <input class="form__input-name form__input--style" type="text" name="first-name" placeholder="Петр"
+                  <input class="form__input form__input--name" type="text" name="first-name" placeholder="Петр"
                     required>
                 </label>
               </p>
               <p>
                 <label class="form__personal-info-label"> <span class="form__personal-info-text">Фамилия*:</span>
-                  <input class="form__input-last-name form__input--style" type="text" name="last-name"
+                  <input class="form__input form__input--last-name" type="text" name="last-name"
                     placeholder="Иванов" required>
                 </label>
               </p>
               <p>
                 <label class="form__personal-info-label"> <span class="form__personal-info-text">Отчество:</span>
-                  <input class="form__input-patronymic form__input--style" type="text" name="patronymic"
+                  <input class="form__input form__input--patronymic" type="text" name="patronymic"
                     placeholder="Александрович">
                 </label>
               </p>
             </fieldset>
 
             <fieldset class="form__fieldset-information">
-              <legend class="form__legend form__legend--uppercase">Контактная информация:</legend>
+              <legend class="form__legend form__legend--uppercase form__legend--information">Контактная информация:
+              </legend>
               <div class="form__information-inner">
                 <ul class="form__information-list">
                   <li class="form__information-item-tel">
-                    <label class="form__information-label"> <span class="form__text-information"> <span
-                          class="form__text--none">Контактный</span>телефон*:</span>
-                      <input class="form__input--tel form__input--style" type="tel" name="tel"
+                    <label class="form__information-label"> <span class="form__text-information">
+                        <span class="form__text-none">Контактный</span> телефон*:</span>
+                      <input class="form__input form__input--tel " type="tel" name="tel"
                         placeholder="Введите телефон" required>
                       <svg class="form__input-icon" width="58" height="58" viewBox="0 0 58 58" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
@@ -107,9 +108,10 @@
                     </label>
                   </li>
                   <li class="form__information-item-email">
-                    <label class="form__information-label"> <span class="form__text-information">Электронная почта*:</span>
-                      <input class="form__input--email form__input--style" type="email" name="emal"
-                        placeholder="Введите email" required>
+                    <label class="form__information-label"> <span class="form__text-information">Электронная
+                        почта*:</span>
+                      <input class="form__input form__input--email" type="email" name="emal"
+                        placeholder="Введите e-mail" required>
                       <svg class="form__input-icon" width="58" height="58" viewBox="0 0 58 58" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <rect width="58" height="58" fill="#E6E6E6" />
@@ -124,33 +126,37 @@
             </fieldset>
 
             <fieldset class="form__fieldset-impressions">
-              <legend class="form__legend form__legend--uppercase">Ваше общее впечатление:</legend>
+              <legend class="form__legend form__legend--uppercase form__legend--impressions">Ваше общее впечатление:
+              </legend>
               <ul class="form__impressions-list">
                 <li class="form__impressions-item">
                   <input class="visually-hidden form__input-impression" id="good-impression" type="radio"
                     name="impression" value="good" checked>
-                  <label class="form__impressions-label form__text--bold" for="good-impression">Скорее
-                    положительные</label>
+                  <label class="form__impressions-label form__impressions-label--text-bold" for="good-impression"> <span
+                      class=""></span> Скорее
+                    положительное</label>
                 </li>
                 <li class="form__impressions-item">
                   <input class="visually-hidden form__input-impression" id="bad-impression" type="radio"
                     name="impression" value="bad">
-                  <label class="form__impressions-label form__text--bold" for="bad-impression">Скорее
-                    отрицательные</label>
+                  <label class="form__impressions-label form__impressions-label--text-bold" for="bad-impression">Скорее
+                    отрицательное</label>
                 </li>
                 <li class="form__impressions-item">
                   <input class="visually-hidden form__input-impression" id="dont-know-impression" type="radio"
                     name="impression" value="i dont know">
-                  <label class="form__impressions-label form__text--bold" for="dont-know-impression">Затрудняюсь
+                  <label class="form__impressions-label form__impressions-label--text-bold"
+                    for="dont-know-impression">Затрудняюсь
                     ответить</label>
                 </li>
               </ul>
             </fieldset>
 
             <fieldset class="form__fieldset-sight">
-              <legend class="form__legend form__legend--uppercase">Посещенные <br> достопримечательности:</legend>
+              <legend class="form__legend form__legend--uppercase form__legend--sight">Посещенные <br>
+                достопримечательности:</legend>
               <ul class="form__sight-list">
-                <li class="form__sight-item">
+                <li class="form__sight-item form__sight-item--padding-left">
                   <input class="visually-hidden form__input-sight" id="sight-devil's-bridge" type="checkbox"
                     name="sight" value="devil's bridge" checked>
                   <label class="form__sight-label" for="sight-devil's-bridge"> <span
@@ -163,7 +169,7 @@
                   <label class="form__sight-label" for="sight-mountain-bell"> <span
                       class="form__text form__text--bold">Гора-Колокол</span></label>
                 </li>
-                <li class="form__sight-item">
+                <li class="form__sight-item form__sight-item--padding-left">
                   <input class="visually-hidden form__input-sight" id="sight-slide-park" type="checkbox" name="sight"
                     value="slide park" checked>
                   <label class="form__sight-label" for="sight-slide-park"> <span
@@ -180,7 +186,7 @@
             </fieldset>
 
             <fieldset class="form__fieldset-comments">
-              <legend class="form__legend form__legend--uppercase">Опишите свои эмоции:</legend>
+              <legend class="form__legend form__legend--uppercase form__legend--comments">Опишите свои эмоции:</legend>
               <p>
                 <label class="form__label">
                   <textarea class="form__comments-text form__comments-text--placegolder-style" name="comments" cols="30"
@@ -206,15 +212,17 @@
             <li class="social__item">
               <a class="social__link social__link--twitter" href="#" aria-label="Twitter  HTML Academy">
                 <span class="visually-hidden">Твиттер</span>
-                <svg class="social__icon" width="46" height="48" viewBox="0 0 46 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="social__icon" width="46" height="48" viewBox="0 0 46 48" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="img/sprite.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook"
-                href="https://www.facebook.com/htmlacademy" aria-label="Facebook HTML Academy"> <span class="visually-hidden">Фейсбук</span>
-                <svg class="social__icon" width="46" height="48" viewBox="0 0 46 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"
+                aria-label="Facebook HTML Academy"> <span class="visually-hidden">Фейсбук</span>
+                <svg class="social__icon" width="46" height="48" viewBox="0 0 46 48" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="img/sprite.svg#icon-facebook"></use>
                 </svg>
               </a>
@@ -222,7 +230,8 @@
             <li class="social__item">
               <a class="social__link social__link--youtube" href="#" aria-label="YouTube HTML Academy">
                 <span class="visually-hidden">Ютуб</span>
-                <svg class="social__icon" width="46" height="48" viewBox="0 0 46 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="social__icon" width="46" height="48" viewBox="0 0 46 48" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="img/sprite.svg#icon-youtube"></use>
                 </svg>
               </a>
@@ -233,7 +242,8 @@
           <b class="copyright__text">Разработано</b>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy">
             <span class="visually-hidden">HTML Academy</span>
-            <svg class="copyright-icon" width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="copyright-icon" width="27" height="35" viewBox="0 0 27 35" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="img/sprite.svg#htmlacademy"></use>
             </svg>
           </a>

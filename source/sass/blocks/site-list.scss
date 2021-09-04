@@ -58,18 +58,24 @@
 }
 
 @media (min-width: $desktop-width) {
+  .site-list__item-link {
+    padding-top: 7px;
+  }
   .site-list__item {
-    padding-left: 76px;
+    padding-left: 87px;
   }
   .site-list__item--main {
-    padding-left: 15px;
+    padding-left: 69px;
   }
   .site-list__item--catalog {
-    padding-left: 145px;
+    padding-left: 121px;
   }
   .site-list__item--form-comment {
     margin-left: auto;
-    padding-right: 45px;
+    padding-left: 65px;
+  }
+  .site-list__item--html-academy {
+    padding-right: 50px;
   }
 }
 

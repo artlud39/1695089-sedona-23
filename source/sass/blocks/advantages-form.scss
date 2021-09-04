@@ -3,15 +3,15 @@
 }
   .advantages-form__slogan {
     @include reset;
-    padding: 32px 9px 44px;
+    padding: 35px 9px 27px;
     font-weight: bold;
     font-size: 18px;
    }
 
    .advantages-form__intro {
      @include reset;
-     line-height: 26px;
-     padding-bottom: 11px;
+     line-height: 24px;
+     padding-bottom: 18px;
    }
 
 
@@ -21,11 +21,11 @@
     }
     .advantages-form__slogan {
       @include reset;
-      padding: 43px 100px 42px;
-      font-size: 21px;
+      padding: 62px 0 33px;
+      font-size: 30px;
      }
      .advantages-form__intro {
-      padding-bottom: 53px;
+      padding-bottom: 87px;
     }
     }
 
@@ -33,7 +33,10 @@
     .advantages-form__wrapper {
       padding: 0 382px;
     }
+    .advantages-form__slogan {
+      padding-top: 111px;
+    }
      .advantages-form__intro {
-      padding-bottom: 41px;
+      padding-bottom: 59px;
     }
     }

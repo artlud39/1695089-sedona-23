@@ -16,7 +16,7 @@
 .form__legend {
   @include reset;
   border-top: 1px solid #E5E5E5;
-  padding-top: 20px;
+  padding: 20px 0 20px;
   width: 100%;
 }
 .form__legend--uppercase {
@@ -24,13 +24,15 @@
   font-weight: bold;
   text-transform: uppercase;
 }
-.form__input--style {
+.form__input {
+  @include reset;
+  font-family: inherit;
  background-color: #F2F2F2;
  border: none;
  height: 58px;
  box-sizing: border-box;
  width: 100%;
- padding-left: 22px;
+ padding: 18px 22px 14px;
  cursor: pointer;
   &:hover,
   &:focus {
@@ -50,6 +52,8 @@
 }
 
 .form__button {
+  font-family: inherit;
+  line-height: 26px;
   background-color: $lightblue;
   color: $white;
   display: inline-block;
@@ -61,6 +65,7 @@
   font-weight: bold;
   box-sizing: border-box;
   cursor: pointer;
+  height: 58px;
   &:hover,
   &:focus {
     background-color: #669EC0;
@@ -75,6 +80,11 @@
   font-size: 18px;
   text-transform: none;
 }
+.form__impressions-label--text-bold {
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: none;
+}
 .form__footnote {
   display: none;
 }
@@ -84,7 +94,10 @@
 
 
 /*------------------form__feildset-personal-info-------------------*/
-
+.form__fieldset-personal-info p {
+  @include reset;
+  margin-bottom: 21px;
+}
 .form__personal-info-label {
   display: flex;
   align-items: center;
@@ -94,9 +107,11 @@
 }
 
 /*------------------form__fieldset-information----------------------*/
+.form__legend--information {
+  padding: 20px 0 19px;
+}
 .form__information-list {
   @include reset-list;
-  padding: 17px 0 28px;
 }
 .form__information-label {
   position: relative;
@@ -104,12 +119,18 @@
   flex-wrap: wrap;
 }
 .form__text-information {
-  padding-left: 20px;
+  padding-left: 22px;
+  padding-bottom: 8px;
+}
+.form__information-item-tel {
+  margin-bottom: 12px;
 }
 .form__input--tel {
   padding-right: 58px;
 }
-
+.form__information-item-email {
+  margin-bottom: 26px;
+}
 .form__input--email {
   padding-right: 58px;
 }
@@ -122,11 +143,15 @@
 
 
 /*------------------form__fieldset-impressions-----------------------*/
-
+.form__legend--impressions {
+  padding: 20px 0 22px;
+}
 .form__impressions-list {
   @include reset-list;
   display: flex;
   flex-wrap: wrap;
+  gap: 10px;
+  padding-bottom: 27px;
 }
 
 .form__input-impression {
@@ -137,10 +162,10 @@
   &:checked+label::after {
     content: '';
     position: absolute;
-    top: 0;
-    left: 16px;
-    width: 15px;
-    height: 15px;
+    top: -3px;
+    left: 18px;
+    width: 20px;
+    height: 20px;
     background-color: #333;
     border-radius: 50%;
     transform: translateY(25%);
@@ -155,21 +180,20 @@
   display: flex;
   align-items: center;
   height: 58px;
-  padding-top: 14px;
 }
 
 .form__impressions-label {
   position: relative;
-  padding-left: 75px;
+  padding-left: 77px;
 }
 
 .form__impressions-label::before {
   content: '';
   position: absolute;
   top: 0;
-  left: 0;
-  width: 48px;
-  height: 48px;
+  left: 3px;
+  width: 50px;
+  height: 50px;
   background-color: #F2F2F2;
   border-radius: 50%;
   transform: translateY(-25%);
@@ -189,47 +213,57 @@
 
 
 /*--------------------form__fieldset-sight--------------------*/
+.form__legend--sight {
+  padding: 15px 0 0;
+}
 .form__sight-list {
   @include reset-list;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-bottom: 54px;
+  padding-bottom: 38px;
+  gap: 17px;
     @media (min-width:$tablet-width) {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 83px;
+    gap: 0;
     }
 
     @media (min-width: $desktop-width) {
      display: flex;
      flex-direction: row;
      justify-content: space-between;
+     padding-bottom: 80px;
     }
 }
 .form__sight-item {
   padding-top: 36px;
    @media (min-width:$tablet-width) {
-     padding-left: 54px;
+     padding-left: 33px;
+     padding-top: 60px;
      text-align: start;
+     width: 324px;
+     box-sizing: border-box;
    }
    @media (min-width: $desktop-width) {
       padding-left: 0;
+      width: auto;
   }
 }
 .form__sight-label {
   position: relative;
-  padding-left: 75px;
+  padding-left: 78px;
   cursor: pointer;
 }
 
 .form__sight-label::before {
   content: '';
   position: absolute;
-  top: 0;
+  top: -6px;
   left: 0;
-  width: 46px;
-  height: 46px;
+  width: 52px;
+  height: 52px;
   background-color: #F2F2F2;
   transform: translateY(-25%);
 }
@@ -244,24 +278,36 @@
   content: '';
   position: absolute;
   top: 0;
-  left: 12px;
+  left: 16px;
   width: 24px;
   height: 17px;
   background-image: url(../../img/icons/icon-tick.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
-  transform: translateY(25%);
 }
 .form__input-sight:checked + label:active:after {
   background-image: url(../../img/icons/icon-tick-active.svg);
 }
 
 /*--------------------form__fieldset-comments--------------------*/
-
+.form__legend--comments {
+  padding: 20px 0 15px;
+}
+.form__fieldset-comments p {
+  @include reset;
+}
 .form__comments-text {
+  font-family: inherit;
+  line-height: 26px;
+  display: block;
   width: 100%;
+  height: 160px;
   background-color: #F2F2F2;
   border: none;
+  resize: none;
+  padding: 13px 23px 29px 21px;
+  box-sizing: border-box;
+  margin-bottom: 51px;
 }
 .form__comments-text--placegolder-style {
   &::-webkit-input-placeholder {
@@ -289,50 +335,71 @@
     grid-template-rows: min-content min-content min-content min-content 1fr;
     padding-left: 0;
     padding-right: 0;
-    padding-bottom: 61px;
+    padding-bottom: 55px;
   }
   .form__legend {
     padding-top: 0;
     border-top: none;
+    font-size: 21px;
   }
   .form fieldset {
     border: none;
   }
   fieldset.form__fieldset-personal-info {
-  padding-left: 61px;
+  padding-left: 58px;
 }
-
+.form__legend--personal-info {
+  text-align: start;
+  padding-bottom: 55px;
+}
+.form__impressions-list {
+  gap: 20px;
+}
   fieldset.form__fieldset-impressions {
     grid-row: 1/2;
     grid-column: 1/2;
     border-right: 1px solid #DBDBDB;
   }
-
-
+.form__legend--impressions {
+  text-align: start;
+  padding-bottom: 56px;
+}
+.form__legend--information {
+  padding: 44px 0 20px;
+}
   fieldset.form__fieldset-information {
     grid-column: 1/3;
   }
-
-  .form__input-tel {
+  .form__information-item-tel {
+    margin-bottom: 24px;
+  }
+  .form__information-item-email {
+    margin-bottom: 50px;
+  }
+  .form__input--tel {
     width: 648px;
   }
-  .form__input-email {
+  .form__input--email {
     width: 648px;
   }
 
-
+.form__sight-item--padding-left {
+  padding-left: 96px;
+}
   .form__fieldset-sight {
     grid-column: 1/3;
   }
-  .form__fieldset-sight-inner {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
+
   .form__fieldset-comments {
     grid-column: 1/3;
   }
-
+  .form__comments-text {
+    padding: 18px 21px 24px;
+    margin-bottom: 58px;
+}
+.form__legend--comments {
+  padding-bottom: 56px;
+}
   .form__button {
     max-width: 324px;
   }
@@ -346,10 +413,10 @@
 @media (min-width: $desktop-width) {
   .form {
     max-width: 960px;
-    padding-bottom: 66px;
+    padding-bottom: 58px;
   }
-  fieldset.form__feildset-personal-info {
-    padding-left: 78px;
+  fieldset.form__fieldset-personal-info {
+    padding-left: 79px;
   }
 
 
@@ -368,22 +435,34 @@
   padding-left: 0;
   width: max-content;
 }
+.form__legend--information {
+  padding-bottom: 74px;
+}
+.form__legend--impressions {
+  text-align: center;
+}
 .form__information-item-tel {
   padding-right: 80px;
+}
+.form__information-item-email {
+  margin-bottom: 47px;
+}
+.form__sight-item--padding-left {
+  padding-left: 0;
 }
   .form__fieldset-sight-inner {
     display: flex;
     justify-content: space-around;
   }
 
-  .form__input-tel {
+  .form__input--tel {
     width: 316px;
   }
-  .form__input-email {
+  .form__input--email {
     width: 316px;
   }
 
-  .form__text--none {
+  .form__text-none {
     display: none;
   }
 
