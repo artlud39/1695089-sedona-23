@@ -5,7 +5,7 @@
   flex-wrap: wrap;
 }
 
-.reason-one__text {
+.reason-one__text-inner {
   position: relative;
   @include reset;
   background-color: $lightblue;
@@ -15,10 +15,14 @@
   line-height: 21px;
   min-height: 211px;
 }
-.reason-one__text-bold {
+.reason-one__title {
+  @include reset;
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
+}
+.reason-one__text {
+  @include reset;
 }
 .reason-one__image-wrapper {
   @include reset;
@@ -48,9 +52,9 @@
 }
 
 @media (min-width:$tablet-width) {
-  .reason-one__text {
+  .reason-one__text-inner {
     width: 256px;
-    padding: 43px 36px 40px;
+    padding: 43px 30px 40px;
   }
   .reason-one__image-wrapper {
     height: 256px;
@@ -68,18 +72,24 @@
   }
   .reason-one__text-number-reason {
     display: inline-block;
-    padding-bottom: 22px;
+    padding-bottom: 24px;
   }
-  .reason-one__text-bold {
+  .reason-one__title {
     font-size: 21px;
   }
 }
 
 
 @media (min-width: $desktop-width) {
-  .reason-one__text {
-    padding: 47px 53px 56px;
+  .reason-one__text-inner {
+    padding: 52px 69px 56px;
     width: 400px;
+  }
+  .reason-one__title {
+    padding: 0 24px;
+  }
+  .reason-one__text-number-reason {
+    padding-bottom: 24px;
   }
   .reason-one__image-wrapper {
     width: 800px;

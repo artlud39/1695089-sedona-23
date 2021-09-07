@@ -1,15 +1,22 @@
 .popap-error {
   position: absolute;
-  bottom: 0;
-  right: 0;
-  max-width: 320px;
+  bottom: 31%;
+  left: 0;
+  max-width: $mobile-wrapper;
+  height: 280px;
+  background-color: #fff;
+  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+}
+.popap-error--opened {
+  display: block;
+}
+.popap-error--closed {
   display: none;
 }
-
 .popap-error__wrapper {
-  max-width: 236px;
   text-align: center;
-  padding: 30px 39px 35px 37px;
+  padding: 40px 42px 35px 41px;
+  box-sizing: border-box;
 }
 
 .popap-error__title {
@@ -21,19 +28,34 @@
 .popap-error__text {
   @include reset;
   line-height: 24px;
-  padding-top: 40px;
+  padding-top: 27px;
   padding-bottom: 22px;
   color: #333;
 }
 
 .popap-error__button {
+  font-size: 18px;
+  font-family: inherit;
+  font-weight: bold;
   @include reset;
   display: inline-block;
   background-color: $lightblue;
   border: none;
   color: $white;
-  width: 180px;
+  width: 100%;
   height: 58px;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    background-color: #669EC0;
+  }
+  &:active {
+    background-color: #5496BD;
+    color: rgba(255,255,255, .3);
+  }
+  &:disabled {
+    background-color: #E5E5E5;
+  }
 }
 
 
@@ -46,10 +68,36 @@
 
 
 @media (min-width:$tablet-width) {
+  .popap-error {
+    bottom: 14%;
+    left: 25%;
+    max-width: 400px;
+    height: 347px;
 
+  }
+  .popap-error__wrapper {
+    padding: 52px 47px 49px 46px;
+  }
+  .popap-error__title {
+    font-size: 30px;
+    line-height: 40px;
+    padding: 0 31px;
+  }
+  .popap-error__text {
+    padding-bottom: 33px;
+  }
+
+  .popap-error__button {
+    font-size: 21px;
+    width: 272px;
+  }
 }
 
 
 @media (min-width: $desktop-width) {
-
+  .popap-error {
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-200px);
+  }
 }

@@ -4,7 +4,7 @@
   flex-wrap: wrap;
 }
 
-.reason-two__text {
+.reason-two__text-inner {
   @include reset;
   background-color: $lightblue;
   color: $white;
@@ -13,14 +13,19 @@
   min-height: 191px;
   line-height: 21px;
 }
-.reason-two__text-bold {
+.reason-two__title {
+  @include reset;
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
 }
+.reason-two__text {
+  @include reset;
+}
 .reason-two__image-wrapper {
   @include reset;
   height: 260px;
+  height: 256px;
 }
 .reason-two__image {
   width: 520px;
@@ -31,13 +36,21 @@
   display: inline-block;
   padding: 13px 0 16px;
 }
-
+.reason-two__title-new-string {
+  content: '';
+  &::after {
+    content: '\00a0';
+  }
+}
 
 @media (min-width:$tablet-width) {
-  .reason-two__text {
+  .reason-two__text-inner {
     width: 256px;
     padding: 43px 36px 40px;
     order: 2;
+  }
+  .reason-two__text-number-reason {
+    padding: 13px 0 22px;
   }
   .reason-two__image-wrapper {
     width: 512px;
@@ -46,21 +59,25 @@
     width: 100%;
     height: 100%;
   }
-  .reason-two__text-bold {
+  .reason-two__title {
     display: inline-block;
     font-size: 21px;
     line-height: 26px;
     padding: 0 17px;
   }
+  .reason-two__title-new-string {
+    content: none;
+}
 }
 
 
 @media (min-width: $desktop-width) {
+  .reason-two__text-inner {
+    width: 400px;
+    padding: 51px 92px 40px;
+  }
   .reason-two__image-wrapper {
     width: 800px;
   }
-  .reason-two__text {
-    padding: 47px 53px 56px;
-    width: 400px;
-  }
+
 }
