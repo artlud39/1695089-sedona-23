@@ -1,23 +1,28 @@
 .popap-successfully {
   position: absolute;
-  bottom: 0;
-  max-width: 320px;
+  bottom: 15%;
+  left: 0;
+  max-width: $mobile-wrapper;
+  z-index: 100;
+  height: 323px;
+  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+}
+
+.popap-successfully--opened {
+  display: block;
+}
+.popap-successfully--closed {
   display: none;
 }
 
-
-.popap-successfully__wrapper {
-  max-width: 280px;
-  margin: 0 auto;
-  padding: 40px 42px 35px 41px;
+.popap-successfully__wrapper-text {
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 38px 39px 29px 37px;
   text-align: center;
+  height: 225px
 }
-.popap-successfully__button-inner {
-  background-color: #F2F2F2;
-  text-align: center;
-  padding: 20px;
 
-}
 .popap-successfully__title {
   @include reset;
   font-size: 18px;
@@ -28,33 +33,69 @@
   @include reset;
   line-height: 24px;
   padding-top: 40px;
-  padding-bottom: 22px;
   color: #333;
 }
-
+.popap-successfully__button-inner {
+  box-sizing: border-box;
+  background-color: #F2F2F2;
+  text-align: center;
+  padding: 20px;
+  height: 98px;
+}
 .popap-successfully__button {
   text-transform: uppercase;
   @include reset;
-
+  font-size: 18px;
+  font-family: inherit;
+  font-weight: bold;
   background-color: $lightblue;
   border: none;
   color: $white;
-  width: 280px;
+  width: 100%;
   height: 58px;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    background-color: #669EC0;
+  }
+  &:active {
+    background-color: #5496BD;
+    color: rgba(255,255,255, .3);
+  }
+  &:disabled {
+    background-color: #E5E5E5;
+  }
 }
-
-
-
-
 
 
 
 
 @media (min-width:$tablet-width) {
+  .popap-successfully {
+    bottom: 22%;
+    left: 64px;
+    max-width: 640px;
+    height: 347px;
+  }
+
+  .popap-successfully__wrapper-text {
+    padding: 54px 99px 31px 97px;
+    height: 201px
+  }
+  .popap-successfully__title {
+    font-size: 30px;
+  }
+  .popap-successfully__button-inner {
+    padding: 44px 91px;
+    height: 146px;
+  }
 
 }
 
 
 @media (min-width: $desktop-width) {
-
+  .popap-successfully {
+    bottom: 23%;
+    left: 279px;
+  }
 }

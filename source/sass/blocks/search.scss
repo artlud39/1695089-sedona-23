@@ -41,8 +41,12 @@
   padding: 20px 0 30px;
 }
 
-
-
+.search__text-new-string {
+  content: '';
+  &:after {
+    content: '\00a0';
+  }
+}
 
 @media (min-width:$tablet-width) {
   .search__wrapper {
@@ -53,13 +57,19 @@
     font-size: 30px;
   }
   .search__text {
-    padding: 35px 0 35px;
+    padding: 31px 0 39px;
+  }
+  .search__text-new-string {
+    content: none;
   }
   }
 
 
 @media (min-width: $desktop-width) {
   .search__wrapper {
-    padding: 57px 0 66px;
+    padding: 58px 0 66px;
   }
+  .search__text {
+    padding: 31px 0 45px;
+}
   }

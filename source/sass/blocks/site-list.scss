@@ -29,6 +29,7 @@
     background-color: #fff;
     border-bottom: none;
     font-size: inherit;
+    padding: 7px 21px 5px;
     &:hover,
     &:focus {
       color: #81B3D2;
@@ -59,7 +60,7 @@
 
 @media (min-width: $desktop-width) {
   .site-list__item-link {
-    padding-top: 7px;
+    padding-top: 8px;
   }
   .site-list__item {
     padding-left: 87px;

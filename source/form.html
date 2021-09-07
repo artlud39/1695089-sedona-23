@@ -76,8 +76,8 @@
               </p>
               <p>
                 <label class="form__personal-info-label"> <span class="form__personal-info-text">Фамилия*:</span>
-                  <input class="form__input form__input--last-name" type="text" name="last-name"
-                    placeholder="Иванов" required>
+                  <input class="form__input form__input--last-name" type="text" name="last-name" placeholder="Иванов"
+                    required>
                 </label>
               </p>
               <p>
@@ -96,8 +96,8 @@
                   <li class="form__information-item-tel">
                     <label class="form__information-label"> <span class="form__text-information">
                         <span class="form__text-none">Контактный</span> телефон*:</span>
-                      <input class="form__input form__input--tel " type="tel" name="tel"
-                        placeholder="Введите телефон" required>
+                      <input class="form__input form__input--tel " type="tel" name="tel" placeholder="Введите телефон"
+                        required>
                       <svg class="form__input-icon" width="58" height="58" viewBox="0 0 58 58" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <rect width="58" height="58" fill="#E6E6E6" />
@@ -250,21 +250,25 @@
         </div>
       </div>
     </footer>
-    <section class="popap-error">
+
+    <section class="popap-error popap-error--closed">
       <div class="popap-error__wrapper">
         <h2 class="popap-error__title"> Что-то пошло не так!</h2>
         <p class="popap-error__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
         <button class="popap-error__button">ОК</button>
       </div>
     </section>
-    <section class="popap-successfully">
-      <div class="popap-successfully__wrapper">
-        <h2 class="popap-successfully__title"> Ваш озтзыв оставлен!</h2>
-        <p class="popap-successfully__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы
+    <section class="popap-successfully popap-successfully--closed">
+      <div class="popap-successfully__wrapper-text">
+        <h2 class="popap-successfully__title"> Ваш озтзыв отправлен!</h2>
+        <p class="popap-successfully__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. <br>В ближайшее время мы
           опубликуем его на сайте.</p>
       </div>
-      <div class="popap-successfully__button-inner"><button class="popap-successfully__button" type="button">Закрыть
-          окно</button></div>
+      <div class="popap-successfully__button-inner">
+        <button class="popap-successfully__button" type="button">Закрыть
+          окно</button>
+      </div>
+
     </section>
   </div>
   <script src="js/script.min.js"></script>
