@@ -2,23 +2,24 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  padding-top: 30px;
+  padding-top: 26px;
+  padding-bottom: 26px;
 }
 
-@media (min-width:$tablet-width) {
+@media (min-width: $tablet-width) {
   .page-footer__wrapper {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 27px;
+    padding-top: 36px;
+    padding-bottom: 36px;
   }
-  }
+}
 
 @media (min-width: $desktop-width) {
   .page-footer__wrapper {
     justify-content: space-between;
     width: 960px;
     margin: 0 auto;
-    padding-top: 28px;
   }
-  }
+}

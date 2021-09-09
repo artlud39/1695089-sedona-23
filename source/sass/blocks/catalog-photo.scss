@@ -1,11 +1,12 @@
 .catalog-photo__list {
-@include reset-list;
-display: flex;
-flex-direction: column;
-align-items: center;
+  @include reset-list;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 .catalog-photo__item {
-  border-top: 1px solid #E5E5E5;
+  border-top: 1px solid #e5e5e5;
   padding-top: 24px;
   padding-bottom: 15px;
 }
@@ -13,49 +14,52 @@ align-items: center;
 .catalog-photo__item-wrapper {
   display: flex;
   flex-direction: column;
-
 }
 
-
-.catalog-photo__photo-image-inner {
-  @include reset;
+.catalog-photo__photo-image-link {
   height: 100%;
 }
 
 .catalog-photo__item-parameter-list {
   @include reset-list;
 }
+
 .catalog-photo__item-parameter-item-subtitle {
   padding-top: 8px;
 }
+
 .catalog-photo__item-parameter-item-like {
   padding-top: 9px;
 }
+
 .catalog-photo__item-parameter-item-subtitle-text {
   @include reset;
   font-weight: bold;
 }
+
 .catalog-photo__item-parameter-item-aftor-text {
   @include reset;
   text-transform: capitalize;
 }
+
 .catalog-photo__item-parameter-item-like-text {
   @include reset;
   font-weight: bold;
   padding-left: 37px;
   position: relative;
-    &::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 23px;
-      height: 21px;
-      background-image: url(../../img/catalog/like-icon.svg);
-      background-repeat: no-repeat;
-      background-position: 0 0;
-      transform: translateY(-10%);
-    }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 23px;
+    height: 21px;
+    background-image: url("../../img/catalog/like-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    transform: translateY(-10%);
+  }
 }
 
 .catalog-photo__image {
@@ -68,51 +72,57 @@ align-items: center;
   display: none;
 }
 
-
-
-@media (min-width:$tablet-width) {
+@media (min-width: $tablet-width) {
   .catalog-photo__list {
     width: 648px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    }
-    .catalog-photo__item {
-      border-top: none;
-      padding: 0;
-    }
+  }
+
+  .catalog-photo__item {
+    border-top: none;
+    padding: 0;
+  }
 
   .catalog-photo__item--bigger {
     grid-column: 1/3;
   }
+
   .catalog-photo__item-parameter-list {
-    background-color: #F2F2F2;
+    background-color: #f2f2f2;
     display: grid;
     grid-template-columns: 1fr min-content;
     grid-template-rows: 40px 40px;
   }
+
   .catalog-photo__item-parameter-list--another-background {
-    background-color: #EAEAEA;
+    background-color: #eaeaea;
   }
+
   .catalog-photo__item-parameter-item-aftor {
     grid-row: 2/3;
   }
+
   .catalog-photo__item-parameter-item-like {
     grid-column: 2/3;
     grid-row: 1/3;
     align-self: center;
   }
+
   .catalog-photo__item-parameter-item-subtitle {
     padding-top: 0;
   }
+
   .catalog-photo__item-parameter-item-subtitle-text {
     padding-left: 20px;
     padding-top: 16px;
     padding-bottom: 5px;
   }
+
   .catalog-photo__item-parameter-item-aftor-text {
-   padding-left: 20px;
-   padding-bottom: 12px;
+    padding-left: 20px;
+    padding-bottom: 12px;
   }
 
   .catalog-photo__item-parameter-item-like-text {
@@ -121,33 +131,37 @@ align-items: center;
     width: min-content;
     margin-left: auto;
   }
+
   .line-break {
     display: block;
   }
-  }
-
+}
 
 @media (min-width: $desktop-width) {
   .catalog-photo__list {
     width: 100%;
     grid-template-columns: 1fr 1fr 1fr;
-    }
-    .catalog-photo__item--bigger {
-      grid-column: 1/4;
-    }
-    .catalog-photo__item-wrapper {
-     position: relative;
-    }
-    .catalog-photo__item-parameter-list {
-      width: 100%;
-      position: absolute;
-      bottom: 0;
-      background-color: rgba(0,0,0, .3);
-      color: #fff;
-    }
-    .catalog-photo__item-parameter-item-like-text {
-      &::before {
-        background-image: url(../../img/catalog/like-icon-desktop.svg);
-      }
+  }
+
+  .catalog-photo__item--bigger {
+    grid-column: 1/4;
+  }
+
+  .catalog-photo__item-wrapper {
+    position: relative;
+  }
+
+  .catalog-photo__item-parameter-list {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+  }
+
+  .catalog-photo__item-parameter-item-like-text {
+    &::before {
+      background-image: url("../../img/catalog/like-icon-desktop.svg");
     }
   }
+}

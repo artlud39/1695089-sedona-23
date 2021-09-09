@@ -1,4 +1,3 @@
-
 .reason-one__wrapper {
   text-align: center;
   display: flex;
@@ -7,6 +6,7 @@
 
 .reason-one__text-inner {
   position: relative;
+
   @include reset;
   background-color: $lightblue;
   color: $white;
@@ -15,82 +15,94 @@
   line-height: 21px;
   min-height: 211px;
 }
+
 .reason-one__title {
   @include reset;
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
 }
+
 .reason-one__text {
   @include reset;
 }
+
 .reason-one__image-wrapper {
   @include reset;
   height: 260px;
 }
+
 .reason-one__image {
   width: 520px;
-  height:260px;
+  height: 260px;
   object-fit: cover;
 }
 
-
 .reason-one__text::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 37px;
-  background-image: url(../../img/reason-one-triangle.svg);
+  background-image: url("../../img/reason-one-triangle.svg");
   background-repeat: no-repeat;
   background-position: 50% top;
 }
+
 .reason-one__text-number-reason {
   display: inline-block;
   padding: 13px 0 16px;
 }
 
-@media (min-width:$tablet-width) {
+@media (min-width: $tablet-width) {
   .reason-one__text-inner {
     width: 256px;
     padding: 43px 30px 40px;
   }
+
   .reason-one__image-wrapper {
     height: 256px;
     width: 512px;
   }
+
   .reason-one__image {
     width: 100%;
     height: 100%;
   }
+
   .catalog-photo__figcaption {
-    background-color: #F2F2F2;
+    background-color: #f2f2f2;
   }
+
   .reason-one__text::before {
     display: none;
   }
+
   .reason-one__text-number-reason {
     display: inline-block;
     padding-bottom: 24px;
   }
+
   .reason-one__title {
     font-size: 21px;
   }
 }
-
 
 @media (min-width: $desktop-width) {
   .reason-one__text-inner {
     padding: 52px 69px 56px;
     width: 400px;
   }
+
   .reason-one__title {
     padding: 0 24px;
   }
+
   .reason-one__text-number-reason {
     padding-bottom: 24px;
   }
+
   .reason-one__image-wrapper {
     width: 800px;
   }

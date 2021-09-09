@@ -1,42 +1,47 @@
 .advantages-form {
   text-align: center;
 }
+
+.advantages-form__slogan {
+  @include reset;
+  padding: 38px 9px 27px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.advantages-form__intro {
+  @include reset;
+  line-height: 24px;
+  padding-bottom: 18px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .advantages-form__wrapper {
+    padding: 0 166px;
+  }
+
   .advantages-form__slogan {
     @include reset;
-    padding: 35px 9px 27px;
-    font-weight: bold;
-    font-size: 18px;
-   }
+    padding: 62px 0 33px;
+    font-size: 30px;
+  }
 
-   .advantages-form__intro {
-     @include reset;
-     line-height: 24px;
-     padding-bottom: 18px;
-   }
+  .advantages-form__intro {
+    padding-bottom: 87px;
+  }
+}
 
+@media (min-width: $desktop-width) {
+  .advantages-form__wrapper {
+    padding: 0 382px;
+  }
 
-  @media (min-width:$tablet-width) {
-    .advantages-form__wrapper {
-      padding: 0 166px;
-    }
-    .advantages-form__slogan {
-      @include reset;
-      padding: 62px 0 33px;
-      font-size: 30px;
-     }
-     .advantages-form__intro {
-      padding-bottom: 87px;
-    }
-    }
+  .advantages-form__slogan {
+    padding-top: 111px;
+  }
 
-  @media (min-width: $desktop-width) {
-    .advantages-form__wrapper {
-      padding: 0 382px;
-    }
-    .advantages-form__slogan {
-      padding-top: 111px;
-    }
-     .advantages-form__intro {
-      padding-bottom: 59px;
-    }
-    }
+  .advantages-form__intro {
+    padding-bottom: 59px;
+  }
+}

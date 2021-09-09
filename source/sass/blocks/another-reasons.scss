@@ -1,23 +1,24 @@
 .another-reasons {
-  background-color: #EEE;
+  background-color: #eeeeee;
 }
 
-.another-reasons__text{
+.another-reasons__text {
   @include reset;
   padding: 26px;
   box-sizing: border-box;
 }
 
-
 .another-reasons__list {
   @include reset-list;
-  & :last-child {
+
+  &:last-child {
     border-bottom: none;
   }
 }
-.another-reasons__item{
+
+.another-reasons__item {
   text-align: center;
-  border-bottom: 1px solid #D6D6D6;
+  border-bottom: 1px solid #d6d6d6;
   box-sizing: border-box;
   width: 100%;
   padding: 0 35px 25px;
@@ -25,41 +26,47 @@
 
 .another-reasons__item-title {
   font-size: 18px;
+
   @include reset;
   padding: 27px 0 0;
 }
+
 .another-reasons__item-text {
   line-height: 21px;
+
   @include reset;
 }
+
 .another-reasons__text-number {
   display: inline-block;
   padding: 10px 0 16px;
 }
 
-
-
-@media (min-width:$tablet-width) {
+@media (min-width: $tablet-width) {
   .another-reasons__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
   }
-  .another-reasons__item{
+
+  .another-reasons__item {
     border-bottom: none;
     max-width: 256px;
     padding: 41px 40px 44px;
   }
+
   .another-reasons__item-title {
     font-size: 21px;
     padding: 0;
   }
+
   .another-reasons__item-title--padding {
     padding: 0 10px;
   }
+
   .another-reasons__text-number {
     padding: 13px 0 23px;
   }
+
   .another-reasons__item-text--padding {
     padding: 0 23px;
   }
@@ -71,6 +78,7 @@
     max-width: 400px;
     padding: 43px 43px 62px;
   }
+
   .another-reasons__item-title--padding {
     padding: 0 81px;
   }
