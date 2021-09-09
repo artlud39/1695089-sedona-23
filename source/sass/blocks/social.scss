@@ -8,30 +8,32 @@
 .social__link svg {
   width: 46px;
   height: 48px;
-
 }
 
 .social__link {
+  display: block;
+  width: 46px;
+  height: 48px;
   margin-right: 6px;
 }
 
-
-.social__icon  {
-  fill:#81B3D2;
+.social__icon {
+  fill: #81b3d2;
 
   &:hover,
   &:focus {
-    fill: #669EC0;;
+    fill: #669ec0;
   }
+
   &:active {
-    fill:#5496BD;
+    fill: #5496bd;
   }
 }
 
 .social__icon path {
-  fill: #fff;
+  fill: #ffffff;
 }
 
 .social__icon:active path {
-    fill: rgba(255,255,255, .3);
+  fill: rgba(255, 255, 255, 0.3);
 }

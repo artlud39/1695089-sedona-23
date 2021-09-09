@@ -1,4 +1,4 @@
-@import "global/normalize.scss";
+
 
 // Global
 
@@ -21,11 +21,10 @@
 @import "blocks/another-reasons.scss";
 @import "blocks/search.scss";
 @import "blocks/modal-map.scss";
-@import "blocks/footer.scss";
+@import "blocks/page-footer.scss";
 @import "blocks/contacts.scss";
 @import "blocks/social.scss";
 @import "blocks/copyright.scss";
-@import "blocks/catalog.scss";
 @import "blocks/advantages-catalog.scss";
 @import "blocks/catalog-photo.scss";
 @import "blocks/catalog-video.scss";
@@ -33,4 +32,3 @@
 @import "blocks/advantages-form.scss";
 @import "blocks/popap-error.scss";
 @import "blocks/popap-successfully.scss";
-

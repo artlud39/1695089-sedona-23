@@ -1,7 +1,27 @@
+.modal-map__wrapper {
+  padding-bottom: 10px;
+}
+
 .modal-map__image {
   width: 320px;
   height: 350px;
-  width: 100%;
+  display: block;
+  margin: 0 auto;
 }
 
+@media (min-width: $tablet-width) {
+  .modal-map__wrapper {
+    padding-bottom: 0;
+  }
 
+  .modal-map__image {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .modal-map__image {
+    width: 1200px;
+    height: 350px;
+  }
+}
